@@ -1,0 +1,685 @@
+
+@media screen and (min-width: 320px) and (max-width: 578px){
+
+    #navbar
+    {
+      height: 400px;
+      display: none;
+    }
+    #optional .accordion{
+        margin: 1rem auto 1rem auto;
+        width: 90%;
+    }
+    .container{
+        padding: 0 1rem;
+    }
+    .container.coaching.optional{
+        width:100%;
+    }
+    .section-box.optional{
+        flex-direction: column;
+    }
+    #optional img{
+        margin-top: 0rem;
+        width:100%;
+    }
+    .optional-img{
+        width:100%;
+    }
+    .text-box .container.optional p {
+        margin-left:0;
+        padding-left:0;
+    }
+    .topnav-m a.icon {
+      float: right;
+      display: flex;
+      width:100%;
+      flex-direction: column;
+      justify-content: flex-end;
+      align-items: flex-end;
+    }
+    #navbar.responsive 
+    {
+      position: relative;
+    }
+    #navbar.responsive a.icon 
+    {
+      position: absolute;
+      right: 0;
+      top: 0;
+    }
+    #navbar.responsive
+    {
+      background-color: var(--theme-blue);
+    display:flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items:center;
+    position:absolute;
+    top:60px;
+    
+    }
+    .text{
+        padding: 1rem 1rem;
+    }
+    #navbar.responsive  ul{
+        flex-direction: column;
+    }
+    #navbar.responsive  ul li{
+    margin:0;
+    }
+    #navbar a {
+
+      display:flex;
+      padding: 1em 1em 1em 1em;
+    }
+  
+    .section-box.coaching img{
+        margin-left: 0rem;
+        margin-top: 0rem;
+            width: 100%;
+           
+        }
+        .section-box.coaching{
+        
+            justify-content: center;
+            align-items: center;
+        }
+        .container.coaching ul{
+        
+            margin:0;
+        
+        }
+        .section-box.coaching .container.coaching p{
+        
+            margin:0;
+        
+        }
+        .section-box{
+            display:flex;
+            flex-direction: column-reverse;
+        }
+        .intro-text-box{
+            margin: 2rem;
+            width:80%;
+        }
+        .intro-text img{
+            width:100%;
+        }
+    .hero{
+  text-align:center;
+    }
+    .hero h3{
+        font-weight: 400;
+        font-size: 1.1rem;
+    }
+    .hero h4{
+        padding-top: 2rem;
+    }
+    .hero h1{
+        margin:0;
+        text-transform: none;
+        font-weight: 200;
+        font-size: 2.5rem;
+    }
+    .intro-text{
+        flex-direction: column-reverse;
+        margin:0;
+        padding: 0;
+    }
+#tool{
+
+    display:none;
+}
+    .section-box img{
+        width: 100%;
+    }
+    .section-box.nyc img{
+        width: 100%;
+    }
+    .section-box.coaching img{
+       margin-top:2rem;
+    }
+    .intro-text.right{
+        flex-direction: column;
+
+    }
+    .intro-text p{
+        margin: 0rem 0rem 0 0rem;
+        text-align:left;
+    }
+    
+    .text-box h2{
+     padding:2rem 1rem 2rem 1rem;
+     text-align:center;
+     font-size: 2.5rem;
+    
+    }
+    .text-box p{
+        padding: 2rem 1rem 2rem 1rem;
+        margin: 0rem 1rem 0 1rem;
+    }
+    .text-box ol{
+        padding: 0rem 1rem 0rem 1rem;
+        margin: 0rem 1rem 0 2rem;
+    
+    }
+    .text-box ul{
+        padding: 0rem 1rem 0rem 1rem;
+        margin: 0rem 1rem 0 2rem; 
+    }
+    
+    .sessions{
+        padding: 1rem 1rem 0 1rem;
+        margin: 0rem 1rem 0 1rem;
+    }
+    .accordion{
+        height:100%;
+        text-align:center;
+        flex-direction: column;
+        align-items: center;
+        justify-content:center;
+    }
+    .accordion #bold{
+        padding-bottom:0.5rem;
+    }
+    .material-icons{
+        padding-top:0.5rem;
+        margin-left: 0;
+    }
+    .faculty-bio{
+        display:flex;
+        flex-direction: column;
+        background-color: var(--theme-blue-10);
+        padding: 1rem 1rem 0 1rem;
+        margin: 2rem 0rem 0 0rem;
+        
+    }
+    .faculty h2{
+     padding:2rem 1rem 2rem 1rem;
+     text-align:center;
+    }
+    .faculty p{
+        padding:0rem;
+    }
+    .image{
+        width:100%;
+    }
+    
+    .bio-text{
+        width:100%;
+    }
+    
+    footer{
+        display:flex;
+        flex-direction: column;
+    }
+    .section-box a  {
+       margin: 0rem 0rem 2rem 0rem;
+       width: 100%;
+    }  
+    .section-box a img#govlab-chalk {
+       
+        width: 100%;
+     }  
+}
+@media screen and (min-width: 579px) and (max-width: 830px){
+    #navbar
+    {
+      height: 400px;
+      display: none;
+    }
+    .container{
+        padding: 0 1rem;
+    }
+    .text{
+        padding: 1rem 1rem;
+    }
+    #optional .accordion{
+        margin: 1rem auto 1rem auto;
+        width: 90%;
+    }
+    .container.coaching.optional{
+        width:100%;
+    }
+    .section-box.optional{
+        flex-direction: column;
+    }
+    #optional img{
+        margin-top: 0rem;
+        width:100%;
+    }
+    .optional-img{
+        width:100%;
+    }
+    .text-box .container.optional p {
+        margin-left:0;
+        padding-left:0;
+    }
+    .topnav-m a.icon {
+      float: right;
+      display: flex;
+      width:100%;
+      flex-direction: column;
+      justify-content: flex-end;
+      align-items: flex-end;
+    }
+    #navbar.responsive 
+    {
+      position: relative;
+    }
+    #navbar.responsive a.icon 
+    {
+      position: absolute;
+      right: 0;
+      top: 0;
+    }
+    #navbar.responsive
+    {
+      background-color: var(--theme-blue);
+    display:flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items:center;
+    position:absolute;
+    top:60px;
+    
+    }
+    #navbar.responsive  ul{
+        flex-direction: column;
+    }
+    #navbar.responsive  ul li{
+    margin:0;
+    }
+    #navbar a {
+
+      display:flex;
+      padding: 1em 1em 1em 1em;
+    }
+  
+    .section-box.coaching img{
+        margin-left: 0rem;
+        margin-top: 0rem;
+            width: 100%;
+           
+        }
+        .section-box.coaching{
+        
+            justify-content: center;
+            align-items: center;
+        }
+        .container.coaching ul{
+        
+            margin:0;
+        
+        }
+        .section-box.coaching .container.coaching p{
+        
+            margin:0;
+        
+        }
+        .section-box{
+            display:flex;
+            flex-direction: column-reverse;
+        }
+        .intro-text-box{
+            margin: 2rem;
+            width:80%;
+        }
+        .intro-text img{
+            width:100%;
+        }
+    .hero{
+  text-align:center;
+    }
+    .hero h3{
+        font-weight: 400;
+        font-size: 1.1rem;
+    }
+    .hero h4{
+        padding-top: 2rem;
+    }
+    .hero h1{
+        margin:0;
+        text-transform: uppercase;
+        font-weight: 200;
+        font-size: 2.5rem;
+    }
+    .intro-text{
+        flex-direction: column-reverse;
+        margin:0;
+        padding: 0;
+    }
+#tool{
+
+    display:none;
+}
+    .section-box img{
+        width: 100%;
+    }
+    .section-box.nyc img{
+        width: 100%;
+    }
+    .section-box.coaching img{
+       margin-top:2rem;
+    }
+    .intro-text.right{
+        flex-direction: column;
+
+    }
+    .intro-text p{
+        margin: 0rem 0rem 0 0rem;
+        text-align:left;
+    }
+    
+    .text-box h2{
+     padding:2rem 1rem 2rem 1rem;
+     text-align:center;
+    
+    }
+    .text-box p{
+        padding: 2rem 1rem 2rem 1rem;
+        margin: 0rem 1rem 0 1rem;
+    }
+    .text-box ol{
+        padding: 0rem 1rem 0rem 1rem;
+        margin: 0rem 1rem 0 2rem;
+    
+    }
+    .text-box ul{
+        padding: 0rem 2rem 0rem 2rem;
+        margin: 0rem 1rem 0 2rem; 
+    }
+    
+    .sessions{
+        padding: 1rem 1rem 0 1rem;
+        margin: 0rem 1rem 0 1rem;
+    }
+    .accordion{
+        height:100%;
+        text-align:center;
+        flex-direction: column;
+        align-items: center;
+        justify-content:center;
+    }
+    .accordion #bold{
+        padding-bottom:0.5rem;
+    }
+    .material-icons{
+        padding-top:0.5rem;
+        margin-left: 0;
+    }
+          .faculty-bio{
+              display:flex;
+              flex-direction: column;
+              background-color: var(--theme-blue-10);
+              padding: 1rem 2rem 0 2rem;
+              margin: 2rem 1rem 0 1rem;
+              
+          }
+          .faculty h2{
+           padding:2rem 1rem 2rem 1rem;
+           text-align:center;
+          }
+          .faculty p{
+              padding:0rem;
+          }
+          .image{
+              width:100%;
+          }
+          
+          .bio-text{
+              width:100%;
+          }
+          
+          footer{
+              display:flex;
+              flex-direction: column;
+          }
+              
+          .section-box a{
+            width: 100%;
+         }  
+         .section-box a img#govlab-chalk {
+            width: 100%;
+         }  
+}
+
+@media screen and (min-width: 831px) and (max-width: 1350px){
+    /* #navbar
+    {
+      height: 400px;
+      display: none;
+    } */
+    /* #optional .accordion{
+        margin: 1rem auto 1rem auto;
+        width: 90%;
+    }
+    .container.coaching.optional{
+        width:100%;
+    }
+    .section-box.optional{
+        flex-direction: column;
+    }
+    #optional img{
+        margin-top: 0rem;
+        width:100%;
+    }
+    .optional-img{
+        width:100%;
+    }
+    .text-box .container.optional p {
+        margin-left:0;
+        padding-left:0;
+    } */
+    /* .topnav-m a.icon {
+      float: right;
+      display: flex;
+      width:100%;
+      flex-direction: column;
+      justify-content: flex-end;
+      align-items: flex-end;
+    }
+    #navbar.responsive 
+    {
+      position: relative;
+    }
+    #navbar.responsive a.icon 
+    {
+      position: absolute;
+      right: 0;
+      top: 0;
+    }
+    #navbar.responsive
+    {
+      background-color: var(--theme-blue);
+    display:flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items:center;
+    position:absolute;
+    top:60px;
+    
+    }
+    #navbar.responsive  ul{
+        flex-direction: column;
+    }
+    #navbar.responsive  ul li{
+    margin:0;
+    }
+    #navbar a {
+
+      display:flex;
+      padding: 1em 1em 1em 1em;
+    }
+   */
+    .section-box.coaching img{
+        margin-left: 0rem;
+        margin-top: 0rem;
+            width: 50%;
+           
+        }
+        .section-box.coaching{
+        
+            justify-content: center;
+            align-items: center;
+        }
+        /* .container.coaching ul{
+        
+            margin:0;
+        
+        } */
+        .section-box.coaching .container.coaching p{
+        
+            margin:0;
+        
+        }
+        /* .section-box{
+            display:flex;
+            flex-direction: column-reverse;
+        } */
+        .intro-text{
+            background-color: var(--yellow-fade); 
+            display:flex;
+            flex-direction: row;
+            justify-content: center;
+            align-items: center;
+        }
+        .intro-text img{
+            width: 50%;
+            height:400px;
+            display:block;
+            object-fit: cover;
+        }
+        .intro-text.right img{
+            width: 50%;
+            height:500px;
+            display:block;
+            object-fit: cover;
+        }
+        .intro-text-box{
+            width: 50%;
+            margin: 2rem 1rem 2rem 1rem;
+        }
+        
+        .intro-text p{
+        
+            color: var(--orange-dark);
+            font-size: 1.2rem;
+            font-weight: 300;
+            line-height: 2;
+            text-align: left;
+        }
+        .right {
+            background-color: var(--white);
+        }
+        .right p{
+            text-align:right;
+            color: var(--theme-blue);
+        }
+    .hero{
+  text-align:center;
+    }
+    .hero h3{
+        font-weight: 400;
+        font-size: 1.1rem;
+    }
+    .hero h4{
+        padding-top: 2rem;
+    }
+    .hero h1{
+        margin:0;
+        text-transform: uppercase;
+        font-weight: 200;
+        font-size: 2.5rem;
+    }
+
+#tool{
+
+    display:none;
+}
+    .section-box img{
+        width: 100%;
+    }
+    .section-box.nyc img{
+        width: 50%;
+    }
+    .section-box.coaching img{
+       margin-top:2rem;
+    }
+
+    .intro-text p{
+        margin: 0rem 0rem 0 0rem;
+        text-align:justify;
+    }
+    
+    .text-box h2{
+     padding:2rem 1rem 2rem 1rem;
+     text-align:center;
+     font-size: 2.5rem;
+    
+    }
+    .text-box p{
+        padding: 2rem 1rem 2rem 1rem;
+        margin: 0rem 1rem 0 1rem;
+    }
+    .text-box ol{
+        padding: 0rem 1rem 0rem 1rem;
+        margin: 0rem 1rem 0 2rem;
+    
+    }
+    .text-box ul{
+        padding: 0rem 2rem 0rem 2rem;
+        margin: 0rem 1rem 0 2rem; 
+    }
+    
+    .sessions{
+        padding: 1rem 1rem 0 1rem;
+        margin: 0rem 1rem 0 1rem;
+    }
+    .accordion{
+        height:100%;
+        text-align:center;
+        flex-direction: column;
+        align-items: center;
+        justify-content:center;
+    }
+    .accordion #bold{
+        padding-bottom:0.5rem;
+    }
+    .material-icons{
+        padding-top:0.5rem;
+        margin-left: 0;
+    }
+          .faculty-bio{
+              display:flex;
+              flex-direction: column;
+              background-color: var(--theme-blue-10);
+              padding: 1rem 1rem 0 1rem;
+              margin: 2rem 1rem 0 1rem;
+              
+          }
+          .faculty h2{
+           padding:2rem 1rem 2rem 1rem;
+           text-align:center;
+          }
+          .faculty p{
+              padding:0rem;
+          }
+          .image{
+              width:100%;
+          }
+          
+          .bio-text{
+              width:100%;
+          }
+          
+          footer{
+              display:flex;
+              flex-direction: column;
+          }
+          .section-box a img#govlab-chalk {
+            margin: 0rem 0rem 2rem 0rem;
+            width: 100%;
+         }    
+}
