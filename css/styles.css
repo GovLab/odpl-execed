@@ -110,6 +110,72 @@ img#odpl-logo{
     line-height: 1.8;
     text-align: left;
 }
+
+#team {
+    background-color: var(--theme-blue);
+  }
+  #team h2{
+    color: #ffffff;
+  }
+  .team{
+    display:flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    margin: 1rem 24rem;
+    padding: 1rem 0;
+  }
+  .other-team{
+    margin: 1rem 12rem;
+  }
+  .team-image{
+    flex-direction: column;
+   
+  text-align: center;
+    align-items: center;
+    
+  }
+  
+  .team-image img{
+  width: auto;
+    height: 110%;
+  }
+  .team-image h4{
+      font-size: 1.2rem;
+    color: var(--theme-blue);
+    margin-bottom:0;
+  }
+  .team-image h5{
+    color: var(--theme-blue);
+    margin: 0.5rem 0 1rem 0;
+    font-size: 1rem;
+    font-weight: 200;
+  }
+  .team-image .square{
+    display: inline-block;
+    position: relative;
+    width: 200px;
+    height: 200px;
+    overflow: hidden;
+    border-radius: 50%;
+    border: 0px solid var(--theme-blue);
+  }
+  .team a{
+color: var(--theme-blue);
+font-size: 16px;
+text-decoration: none;
+  }
+  #bio{
+    padding: 0.5rem 1rem;
+    border: 1px solid var(--theme-blue);
+
+  }
+  .team a:hover{
+    color: #523080;
+  }
+  .team a:hover #bio{
+    border: 1px solid #523080;
+  }
 .section-box{
     display:flex;
     flex-direction: row;
@@ -340,10 +406,12 @@ width:50%;
     font-weight: 200;
     content: 'keyboard_arrow_up';
 }
-#subtitle{
+.faculty .sub{
 font-size: 1.2rem;
+padding:0;
 font-weight: 400;
 color: var(--theme-blue);
+text-align:center;
 }
 .faculty-bio{
     display:flex;

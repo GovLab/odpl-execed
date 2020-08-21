@@ -6,6 +6,17 @@
       height: 400px;
       display: none;
     }
+
+.team{
+    flex-direction: column;
+    margin: 1rem 2rem;
+}
+.team-image{
+    padding: 0 0 2rem 0;
+}
+#subtitle{
+    line-height: 1.2;
+}
     #optional .accordion{
         margin: 1rem auto 1rem auto;
         width: 90%;
@@ -229,6 +240,14 @@
       height: 400px;
       display: none;
     }
+    .team{
+        flex-direction: column;
+        margin: 1rem 2rem;
+    }
+    .team-image{
+        padding: 2rem 0;
+    }
+    
     .container{
         padding: 0 1rem;
     }
@@ -446,6 +465,10 @@
 }
 
 @media screen and (min-width: 831px) and (max-width: 1350px){
+    .team{
+
+        margin: 1rem 8rem;
+    }
     /* #navbar
     {
       height: 400px;
