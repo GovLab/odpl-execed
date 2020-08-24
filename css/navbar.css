@@ -30,7 +30,7 @@
 /* Hide the link that should open and close the topnav on small screens */
 .topnav-m .icon {
   background-color: var(--theme-blue);
-  color:var(--yellow-fade);
+  color:var(--theme-light-blue);
   display: none;
   font-size: 1.25em;
 }
@@ -69,12 +69,12 @@ nav ul li a{
         transition:all 0.3s ease-in-out;
     }
 nav ul li a:hover{
-      color:var(--yellow-fade);
+      color:var(--theme-light-blue);
   }
 
 nav ul li.active a{
-      color:var(--yellow-fade);
-      border-bottom:3px solid var(--yellow-fade);
+      color:var(--theme-light-blue);
+      border-bottom:3px solid var(--theme-light-blue);
   }
 /* The sticky class is added to the navbar with JS when it reaches its scroll position */
 .sticky {

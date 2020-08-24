@@ -2,10 +2,12 @@
     --theme-blue: #113B51;
     --theme-blue-10: #113b5115;
     --theme-blue-90: #113b51b7;
+    --theme-gray: rgba(17, 59, 81, 0.05);
+    --purple:#523080;
     --blue-dark: #113b51b7;
     --orange: rgba(251,97,56);
     --orange-dark: #082f44e3;
-    --yellow-fade: #05BFFF;
+    --theme-light-blue: #05BFFF;
     --white: rgba(255,255,255);
     --white-40: rgba(255,255,255,0.4);
   }
@@ -44,13 +46,15 @@ img#odpl-logo{
     align-items: center;
     background-color: var(--theme-blue);
     }
+#underline{
+    border-bottom: 5px solid var(--theme-light-blue);
+    }
 .header-logo img{
     padding:10px;
     height: 40px;
 }
 .hero{
     padding: 2rem;
-
     height: 55vh;
     background-color: var(--theme-blue);
     color: var(--white);
@@ -59,12 +63,58 @@ img#odpl-logo{
     justify-content: center;
     align-items: center;
 }
+.faculty.hero{
+    height: 35vh;
+}
+.faculty.hero.others{
+    height: 15vh;
+}
+.faculty.hero h1{
+    font-size: 4rem;
+    font-weight: 200;
+}
+.faculty-page{
+    padding: 2rem 15rem;
+}
+.faculty-item{
+    display:flex;
+    flex-direction: row;
+    padding: 4rem 0;
+    border-bottom: 1px solid var(--theme-light-blue);
+}
+.faculty-item.last{
+
+    border-bottom: 0px solid var(--theme-light-blue);
+}
+.faculty-item .faculty-text{
+    padding: 0 4rem;
+}
+.faculty-text p,h3,h5{
+    margin:0;
+}
+.faculty-text p{
+    line-height: 1.8;
+    color: var(--theme-blue);
+    font-weight: 300;
+}
+.faculty-text h3{
+    font-size: 2.5rem;
+    font-weight: 300;
+    margin-top: 20px;
+    color: var(--theme-light-blue);
+}
+.faculty-text h5{
+    font-size: 1.2rem;
+    font-weight: 500;
+    color: var(--theme-blue);
+    padding: 1rem 0;
+}
 .hero h4{
    font-weight: 300;
     margin:1rem;
     font-size: 1.5rem;
 
-    color: var(--yellow-fade);
+    color: var(--theme-light-blue);
 
 }
 .hero h3{
@@ -73,12 +123,13 @@ img#odpl-logo{
 }
 .hero h1{
     margin:0;
-    text-transform: uppercase;
-    font-weight: 200;
+    /* text-transform: uppercase; */
+    font-weight: 300;
     font-size: 2rem;
+    padding-top:2rem;
 }
 .intro-text{
-    background-color: var(--yellow-fade); 
+    background-color: var(--theme-light-blue); 
     display:flex;
     flex-direction: row;
     justify-content: center;
@@ -94,7 +145,7 @@ img#odpl-logo{
     margin: 2rem 6rem 2rem 6rem;
 }
 .text{
-    padding: 2rem 12rem;
+    padding: 2rem 12rem 0rem 12rem;
 }
 .text p{
     font-size: 1.4rem;
@@ -201,6 +252,12 @@ text-decoration: none;
     justify-content: center;
     align-items: center;
 }
+#govlab.text-box{
+padding-bottom: 4rem;
+}
+#govlab.text-box p{
+    font-weight: 200;
+    }
 .section-box.coaching img{
 margin-left: 10rem;
 margin-top: 2rem;
@@ -283,6 +340,7 @@ height:400px;
     text-align:right;
 
 }
+
 #goals.text-box h2{
     background-color:white;
 }
@@ -375,6 +433,55 @@ background-color:white;
     font-size: 1rem;
     margin: 1rem 0 0 0;
 }
+.accordion:hover{
+    background-color: var(--purple);
+    cursor: pointer;
+    color: #ffffff;
+    transition: all .6s ease;
+}
+.accordion:hover #bold{
+    font-weight: 600;
+    color: var(--theme-light-blue);
+}
+.accordion.active{
+    background-color: var(--purple);
+    cursor: pointer;
+    color: #ffffff;
+    transition: all .6s ease;
+}
+.accordion.active #bold{
+    font-weight: 600;
+    color: var(--theme-light-blue);
+}
+.accordion.faculty-more.active{
+    background-color: var(--theme-blue-10);
+    cursor: pointer;
+    color: #ffffff;
+    transition: all .6s ease;
+}
+.accordion.faculty-more.active #bold{
+    font-weight: 600;
+    color: var(--theme-blue);
+}
+.accordion:hover #bold{
+    font-weight: 600;
+    color: var(--theme-light-blue);
+}
+.accordion.faculty-more:hover{
+    background-color: var(--theme-gray);
+    cursor: pointer;
+    color: #ffffff;
+    transition: all .6s ease;
+}
+.accordion.faculty-more:before {
+    content: "MORE";
+    color:var(--theme-blue);
+  }
+  .active.faculty-more:before {
+    content: "LESS";
+    color:var(--theme-blue);
+  }
+
 .optional .accordion ul{
     margin:0;
     padding:0;
