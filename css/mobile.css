@@ -86,6 +86,14 @@ display:none;
     top:60px;
     
     }
+    .container.white.process{
+        padding: 0 1rem 0 1rem;
+        width: 100%;
+    }
+    .section-box.process{
+        display:flex;
+        flex-direction: column;
+    }
     .text{
         padding: 1rem 1rem;
     }
@@ -258,6 +266,14 @@ display:none;
                 padding: 2rem 0rem;
             }
             .faculty-item{
+                display:flex;
+                flex-direction: column;
+            }
+            .container.white.process{
+                padding: 0 1rem 0 1rem;
+                width: 100%;
+            }
+            .section-box.process{
                 display:flex;
                 flex-direction: column;
             }

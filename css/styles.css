@@ -513,6 +513,14 @@ width:50%;
     font-weight: 200;
     content: 'keyboard_arrow_up';
 }
+.container.white.process{
+    padding: 0 3rem 0 1rem;
+    width: 60%;
+}
+.section-box.process{
+    display:flex;
+    flex-direction: row;
+}
 .faculty .sub{
 font-size: 1.2rem;
 padding:0;
