@@ -28,10 +28,15 @@ display:none;
     margin: 1rem 2rem;
 }
 .team-image{
-    padding: 0 0 2rem 2rem;
+    padding: 0 0 2rem 0rem;
 }
 #subtitle{
     line-height: 1.2;
+}
+.text-box .container p{
+    padding: 2rem 1rem 2rem 1rem;
+    margin: 0rem 0rem 0 0rem;
+
 }
     #optional .accordion{
         margin: 1rem auto 1rem auto;
@@ -75,6 +80,7 @@ display:none;
       right: 0;
       top: 0;
     }
+
     #navbar.responsive
     {
       background-color: var(--theme-blue);
@@ -87,7 +93,7 @@ display:none;
     
     }
     .container.white.process{
-        padding: 0 1rem 0 1rem;
+        padding: 0 0rem 0 0rem;
         width: 100%;
     }
     .section-box.process{
@@ -258,7 +264,7 @@ display:none;
         width: 100%;
      }  
 }
-@media screen and (min-width: 579px) and (max-width: 830px){
+@media screen and (min-width: 579px) and (max-width: 949px){
     .mobile-hide{
         display:none;
             }
@@ -506,10 +512,13 @@ display:none;
          }  
 }
 
-@media screen and (min-width: 831px) and (max-width: 1350px){
+@media screen and (min-width: 950px) and (max-width: 1350px){
     .team{
 
         margin: 1rem 8rem;
+    }
+    nav ul li a{
+        font-size: 9pt;
     }
     .faculty-page{
         padding: 2rem 2rem;

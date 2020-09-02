@@ -35,10 +35,12 @@ body{
       margin:0px;
       background-color: #ffffff;
   }
-img#odpl-logo{
-      height: 40px;
-      padding: 1rem;
-  }
+#odpl{
+margin-top:2rem;
+margin-bottom:2rem;
+
+}
+
 
 .header-logo{
     display:flex;
@@ -50,8 +52,12 @@ img#odpl-logo{
     border-bottom: 5px solid var(--theme-light-blue);
     }
 .header-logo img{
-    padding:10px;
-    height: 40px;
+    padding:20px 10px;
+    height: 30px;
+}
+.header-logo img#odpl-logo{
+    padding:10px 20px;
+    height: 25px;
 }
 .hero{
     padding: 2rem;
