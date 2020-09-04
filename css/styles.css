@@ -298,7 +298,10 @@ height:400px;
     background-color:white;
 }
 .container.coaching ul{
-    margin:0rem 8rem 0 2rem;
+    margin:0rem 10rem 0 8rem;
+}
+.container.coaching.exp  ul{
+    margin:0rem 8rem 0 0rem;
 }
 .container.coaching.optional ul{
     text-align:left;
