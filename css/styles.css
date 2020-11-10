@@ -103,6 +103,11 @@ margin-bottom:2rem;
     color: var(--theme-blue);
     font-weight: 300;
 }
+.faculty-text ul{
+    line-height: 1.8;
+    color: var(--theme-blue);
+    font-weight: 300;
+}
 .faculty-text h3{
     font-size: 2.5rem;
     font-weight: 300;
@@ -418,16 +423,15 @@ background-color:white;
 .dark{
   
 }
-.panel {
-    display: flex;
-    flex-direction: column;
-    order: 2;
-    background-color: rgba(27, 138, 207, 0);
-    max-height: 0;
-    overflow: hidden;
-    transition: max-height 0.2s ease-out;
-  
-  }
+ .panel {
+   display: flex;
+   flex-direction: column;
+   order: 2;
+   background-color: rgba(27, 138, 207, 0);
+   overflow: hidden;
+   transition: max-height 0.2s ease-out;
+   padding: 0rem 0rem;
+ }
 .text-box .panel p{
     margin: 0 2rem;
 }
@@ -468,6 +472,14 @@ background-color:white;
     color: #ffffff;
     transition: all .6s ease;
 }
+.accordion.faculty-more:before {
+    content: "MORE";
+    color:var(--theme-blue);
+  }
+  .active.faculty-more:before {
+    content: "LESS";
+    color:var(--theme-blue);
+  }
 .accordion.faculty-more.active #bold{
     font-weight: 600;
     color: var(--theme-blue);
@@ -482,13 +494,8 @@ background-color:white;
     color: #ffffff;
     transition: all .6s ease;
 }
-.accordion.faculty-more:before {
-    content: "MORE";
-    color:var(--theme-blue);
-  }
-  .active.faculty-more:before {
-    content: "LESS";
-    color:var(--theme-blue);
+.active{
+    font-size: 1rem;
   }
 
 .optional .accordion ul{
