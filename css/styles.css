@@ -36,12 +36,14 @@ body{
       background-color: #ffffff;
   }
 #odpl{
-margin-top:2rem;
+margin-top:0rem;
 margin-bottom:2rem;
 
 }
 
-
+#odpl h2{
+    padding-top:0;
+}
 .header-logo{
     display:flex;
     justify-content: center;
@@ -180,28 +182,46 @@ margin-bottom:2rem;
     color: #ffffff;
   }
   .team{
-    display:flex;
-    flex-direction: row;
-    justify-content: space-between;
-    align-items: center;
+    display: flex;
+    flex-direction: row ;
+    max-width: none;
+  margin-left: auto;
+  margin-right: auto;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-flex-flow: row wrap;
+  -ms-flex-flow: row wrap;
+  flex-flow: row wrap;
     margin: 1rem 24rem;
     padding: 1rem 0;
+
   }
   .other-team{
     margin: 1rem 12rem;
   }
   .team-image{
-    flex-direction: column;
-   
-  text-align: center;
-    align-items: center;
-    
+    -webkit-flex: 0 0 50%;
+    -ms-flex: 0 0 50%;
+    flex: 0 0 50%;
+    max-width: 50%;
+    color: white;
+    height: 400px;
   }
-  
+  .faculty-image{
+    display:flex;
+    flex-direction: column;
+    color: white;
+    height: 400px;
+  }
   .team-image img{
   width: auto;
     height: 110%;
   }
+  .faculty-image img{
+    width: auto;
+      height: 110%;
+    }
   .team-image h4{
       font-size: 1.2rem;
     color: var(--theme-blue);
@@ -214,6 +234,15 @@ margin-bottom:2rem;
     font-weight: 200;
   }
   .team-image .square{
+    display: inline-block;
+    position: relative;
+    width: 200px;
+    height: 200px;
+    overflow: hidden;
+    border-radius: 50%;
+    border: 0px solid var(--theme-blue);
+  }
+  .faculty-image .square{
     display: inline-block;
     position: relative;
     width: 200px;

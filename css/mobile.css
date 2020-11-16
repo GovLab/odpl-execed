@@ -1,5 +1,6 @@
 
 @media screen and (min-width: 320px) and (max-width: 578px){
+    
     .mobile-hide{
 display:none;
     }
@@ -29,6 +30,10 @@ display:none;
 }
 .team-image{
     padding: 0 0 2rem 0rem;
+    -webkit-flex: 0 0 100%;
+    -ms-flex: 0 0 100%;
+    flex: 0 0 100%;
+    max-width: 100%;
 }
 #subtitle{
     line-height: 1.2;
