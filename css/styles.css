@@ -212,7 +212,9 @@ margin-bottom:2rem;
     display:flex;
     flex-direction: column;
     color: white;
-    height: 400px;
+
+    justify-content: center;
+    align-content: center;
   }
   .team-image img{
   width: auto;

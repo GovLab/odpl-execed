@@ -52,13 +52,13 @@
             <h3>{{instructor.name}}</h3>
             <h5>{{instructor.title}}</h5>
 
-            <p>{{instructor.short_bio}} </p>
+            <p v-if="instructor.short_bio">{{instructor.short_bio}} </p>
+            <div v-if="!instructor.short_bio" v-html="instructor.full_bio"></div>
 
-
-            <div v-if="showMessage && index_active==index" class="panel" v-html="instructor.full_bio">
+            <div v-if="instructor.short_bio && showMessage && index_active==index" class="panel" v-html="instructor.full_bio">
 
             </div>
-            <div @click="toggleMessage(index)" v-bind:class="{ active: showMessage && index_active==index }" class="accordion faculty-more"><i class="material-icons down"></i></div>
+            <div v-if="instructor.short_bio" @click="toggleMessage(index)" v-bind:class="{ active: showMessage && index_active==index }" class="accordion faculty-more"><i class="material-icons down"></i></div>
           </div>
 
         </div>
