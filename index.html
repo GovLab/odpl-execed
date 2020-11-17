@@ -395,7 +395,7 @@
 
       <div class="team">
 
-        <div v-for="(instructor,index) in facultyData" v-if="instructor.program_lead == true" class="team-image">
+        <div v-for="(instructor,index) in facultyData.reverse()" v-if="instructor.program_lead == true" class="team-image">
           <div class="square">
             <img v-bind:src="instructor.headshot.data.thumbnails[3].url">
           </div>
@@ -409,7 +409,7 @@
       <h2><span id="underline">Guest Faculty</span></h2>
       <div id="guest" class="team">
 
-        <div v-for="(instructor,index) in facultyData" v-if="instructor.program_lead == false" class="team-image">
+        <div v-for="(instructor,index) in facultyData.reverse()" v-if="instructor.program_lead == false" class="team-image">
           <div class="square">
             <img v-bind:src="instructor.headshot.data.thumbnails[3].url">
           </div>
