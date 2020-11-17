@@ -18,6 +18,9 @@ menuItems.click(function(e){
   $('html, body').stop().animate({ 
       scrollTop: offsetTop
   }, 850);
+  menuItems
+         .parent().removeClass("active")
+         .end().filter().parent().addClass("active");
   e.preventDefault();
 });
 
@@ -34,13 +37,6 @@ $(window).scroll(function(){
    // Get the id of the current element
    cur = cur[cur.length-1];
    var id = cur && cur.length ? cur[0].id : "";
-   
-   if (lastId !== id) {
-       lastId = id;
-       // Set/remove active class
-       menuItems
-         .parent().removeClass("active")
-         .end().filter("[href=#"+id+"]").parent().addClass("active");
-   }                   
+                 
 });
 

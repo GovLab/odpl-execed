@@ -5,7 +5,7 @@
     --theme-gray: rgba(17, 59, 81, 0.05);
     --purple:#523080;
     --blue-dark: #113b51b7;
-    --orange: rgba(251,97,56);
+    --orange: rgb(240, 161, 140);
     --orange-dark: #082f44e3;
     --theme-light-blue: #05BFFF;
     --white: rgba(255,255,255);
@@ -30,6 +30,54 @@
 }
 
 
+.alert{
+    position: fixed;
+    bottom: 0px;
+    width: 100%;
+    z-index: 10000;
+    
+  }
+  .alert-content{
+    margin: 2rem;
+    height: 12vh;
+    background-color: #ffffff;
+    border-radius: 25px;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+  }
+  .close{
+  width: 10%;
+  text-align: right;
+  margin-right: 20px;
+  }
+  a.close{
+    font-size: 2rem;
+    text-decoration: none;
+    color: var(--theme-blue);
+  }
+  .text-alert{
+    text-align: center;
+    width:90%;
+  }
+  p.text-alert{
+    color: var(--theme-light-blue);
+    font-weight: 600;
+    font-size: 1.2rem;
+    margin-bottom:20px;
+  }
+  #sub-text{
+    color: var(--theme-blue);
+    font-weight: 500;
+    font-size: 1rem;
+  }
+  a#text-link{
+  color: var(--theme-blue);
+  border-bottom: 1px dashed var(--theme-light-blue);
+  text-decoration: none;
+  font-weight: 600;
+  }
 body{
     font-family: proxima-nova,sans-serif;
       margin:0px;
@@ -193,7 +241,7 @@ margin-bottom:2rem;
   -webkit-flex-flow: row wrap;
   -ms-flex-flow: row wrap;
   flex-flow: row wrap;
-    margin: 1rem 24rem;
+    margin: 1rem 8rem;
     padding: 1rem 0;
 
   }
@@ -201,10 +249,10 @@ margin-bottom:2rem;
     margin: 1rem 12rem;
   }
   .team-image{
-    -webkit-flex: 0 0 50%;
-    -ms-flex: 0 0 50%;
-    flex: 0 0 50%;
-    max-width: 50%;
+    -webkit-flex: 0 0 25%;
+    -ms-flex: 0 0 25%;
+    flex: 0 0 25%;
+    max-width: 25%;
     color: white;
     height: 400px;
   }
@@ -451,9 +499,11 @@ background-color:white;
     padding: 1rem 2rem 0 2rem;
     margin: 0rem 8rem 0 8rem;
 }
-.dark{
-  
+.faqs{
+    padding: 1rem 2rem 1rem 2rem;
+    margin: 0rem 8rem 4rem 8rem;
 }
+
  .panel {
    display: flex;
    flex-direction: column;
@@ -463,8 +513,25 @@ background-color:white;
    transition: max-height 0.2s ease-out;
    padding: 0rem 0rem;
  }
+ .panel_session {
+    display: flex;
+    flex-direction: column;
+    order: 2;
+    background-color: rgba(27, 138, 207, 0);
+    max-height: 0;
+    overflow: hidden;
+    transition: max-height 0.2s ease-out;
+  }
 .text-box .panel p{
     margin: 0 2rem;
+}
+.faqs .panel p{
+    line-height: 1.4;
+}
+.faqs .panel ul{
+    line-height: 2;
+    font-size: 1.1rem;
+    margin: 0 4rem 0 4rem;
 }
 .accordion{
     width: 100%;

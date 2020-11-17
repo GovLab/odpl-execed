@@ -30,6 +30,7 @@ new Vue({
   
     return {
       facultyData: [],
+      faqData:[],
       showMessage: true,
       index_active:0,
       apiURL: 'https://directus.thegovlab.com/odpl_course',
@@ -40,6 +41,7 @@ new Vue({
 
     this.fetchFaculty();
     this.toggleMessage();
+    this.fetchQuestions();
   },
 
 
@@ -60,6 +62,25 @@ new Vue({
 ).then(data => {
   console.log(data)
   self.facultyData = data.data;
+})
+.catch(error => console.error(error));
+    },
+    fetchQuestions() {
+      self = this;
+      const client = new DirectusSDK({
+        url: "https://directus.thegovlab.com/",
+        project: "odpl_course",
+        storage: window.localStorage
+      });
+
+      client.getItems(
+  'faq',
+  {
+    fields: ['*.*']
+  }
+).then(data => {
+  console.log(data)
+  self.faqData = data.data;
 })
 .catch(error => console.error(error));
     },

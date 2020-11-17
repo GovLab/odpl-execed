@@ -30,7 +30,13 @@
   </a>
 
 </header>
+<div id="alert-msg" class="alert">
+  <div class="alert-content">
+  <p class="text-alert">APPLICATIONS OPEN<br><span id="sub-text">Apply <i><a href="https://docs.google.com/forms/d/e/1FAIpQLScWD0EUWrN3i-ou9wcPeyDQSokVuLpwJqmKvtTuenjN7M3TZg/viewform?usp=sf_link" id="text-link" target="_blank">here</a></i>. by December 17, 2020 to be considered for the next cohort of learners. </span></p>
 
+  <a href="#" class="close" data-dismiss="alert" aria-label="close">&times;</a>
+</div>
+</div>
 <body>
   <div class="topnav-m">
     <a href="javascript:void(0);" class="icon" onclick="nav()">
@@ -43,21 +49,19 @@
     <ul id="mainNav">
       <li class="active"><a href="#intro">Introduction</a></li>
       <li><a href="#overview">Overview</a></li>
-      <!-- <li><a href="#goals">Learning Goals</a></li> -->
       <li><a href="#outline">Program Outline</a></li>
-      <!-- <li><a href="#learning">Learning by Doing</a></li>
-      <li><a href="#coaching">Online Project Coaching</a></li> -->
-      <!-- <li><a href="#organization">Organization of the course</a></li> -->
       <li><a href="#objectives">Course Objectives</a></li>
       <li><a href="#application">Application</a></li>
-      <li><a href="#leads">Program Leads</a></li>
+      <li><a href="#team_section">Team</a></li>
+      <li><a href="#guest">Guest Faculty</a></li>
+      <li><a href="#faq">FAQs</a></li>
       <li><a href="#odpl">Open Data Policy Lab</a></li>
     </ul>
   </nav>
   <div id="intro" class="hero">
     <!-- <h4>Today’s Problems: Tomorrow’s Toolkit</h4> -->
     <h1>DATA STEWARDSHIP</h1>
-    <h4>Developing a Data Re-Use Strategy for Solving Public Problems</h4>
+    <h4>Developing a Data Reuse Strategy for Solving Public Problems</h4>
 
 
   </div>
@@ -75,13 +79,14 @@
   </div>
   <div class="text">
     <p>In recent years, data has been increasingly deployed to inform policies targeted at these issues. Yet, many of
-      these data projects, data collaboratives, and open data initiatives remain scattered and atomized. As we enter
+      these data projects, data collaboratives, and open data initiatives remain scattered. As we enter
       into a new age of data use and reuse, a third wave of open data, it is more important than ever to be strategic
       and purposeful, to find new ways to connect the demand for data with its supply to meet institutional objectives.
     </p>
-    <p>This program tries to help leaders in the public and private sector develop a data re-use strategy to solve
-      public problems. Noting the ways in which data resources can inform their day-to-day and strategic
-      decision-making, we teach participants ways in which they can use data to improve how they operate and pursue
+    <p>This program will help <a href="http://datastewards.net">data stewards</a>—responsible data leaders and in the
+      public and private sector—develop a data re-use strategy to solve public problems. Noting the ways data
+      resources can inform their day-to-day and strategic
+      decision-making, we teach participants ways they can use data to improve how they operate and pursue
       goals in the public’s interests. By working differently—using agile methods and data analytics—public sector and
       private sector leaders can further open data and reduce data access inequities in ways that advance their
       institution’s goals.</p>
@@ -98,19 +103,18 @@
 
           <li><span id="bold">Why It Matters:</span> Focus on the three waves of open data and how data reuse has proven
             to be transformative;</li>
-          <li><span id="bold">The Current State of Play:</span> A review of current practice around data reuse and how
-            we can move away from ad hoc efforts to systematic, responsible, and sustainable ones;</li>
+          <li><span id="bold">The Current State of Play:</span> Current practice around data reuse. It will then shift to the failures of current approaches and the need to shift from ad hoc engagements to more systematic, sustainable, and responsible models;</li>
           <li><span id="bold">Defining Demand:</span> Methodologies in how organizations can formulate questions that
             data can answer;</li>
           <li><span id="bold">Mapping Supply:</span> Methods for organizations to discover and assess the open and
             private data available to them;</li>
           <li><span id="bold">Matching Supply with Demand: </span> Operational models for meeting the needs of supply-
             and demand-side actors;</li>
-          <li><span id="bold">Identifying Risks:</span> An overview of the risks that can emerge in the course of data
+          <li><span id="bold">Identifying Risks:</span> Risks that can emerge in the course of data
             reuse;</li>
-          <li><span id="bold">Mitigating Risks and Other Legal Considerations:</span> Guidance on legal and contractual
+          <li><span id="bold">Mitigating Risks and Other Legal Considerations:</span> Legal and contractual
             issues that may arise in the course of data collaboration and other data work; and </li>
-          <li><span id="bold">Institutionalizing Data Reuse:</span> Lessons on how organizations can incorporate data
+          <li><span id="bold">Institutionalizing Data Reuse:</span> How organizations can incorporate data
             reuse into their structure and foster future collaboration and data stewardship.
           </li>
 
@@ -119,7 +123,7 @@
     </div>
   </div>
   <div id="goals" class="text-box">
-    <h2><span id="underline">Program learning goals</span></h2>
+    <h2><span id="underline">Program Learning Goals</span></h2>
 
     <div class="section-box process">
 
@@ -150,9 +154,9 @@
     <div class="sessions">
       <button class="accordion"><span id="bold">Session 1</span>&nbsp Why It Matters<i
           class="material-icons down"></i></button>
-      <div class="panel">
+      <div class="panel_session">
         <p>
-          In this introductory session, we review the history of data reuse and the ways in which it has solved public
+          In this introductory session, we review the history of data reuse and the ways it has solved public
           problems. Through the framework of the three waves of open data, participants will learn about how views of
           data use and reuse have changed over time, the impact data reuse has made, and major challenges facing the
           field. This information will be conveyed through paradigmatic examples that illustrate different models of
@@ -161,18 +165,19 @@
 
       <button class="accordion"><span id="bold">Session 2</span>&nbsp The Current State of Play<i
           class="material-icons down"></i></button>
-      <div class="panel">
+      <div class="panel_session">
         <p> Following a discussion of the history of the movement, we will discuss current approaches to data reuse
-          around the world. This session will further develop the discussion of data models introduced
+          around the world. This session will develop the discussion of data models introduced
           previously—focusing on freedom of information, open government data, and data collaboration. It will then
           shift to the failures of current approaches and the need of current approaches and the need to shift from ad
-          hoc engagements to more systematic, sustainable, and responsible models. Participants will receive a detailed explanation of the
+          hoc engagements to more systematic, sustainable, and responsible models. Participants will receive a detailed
+          explanation of the
           changes needed to realize a third wave of open data and the ways in which the third wave can produce public
           value. </p>
       </div>
       <button class="accordion">
         <span id="bold">Session 3</span>&nbsp Defining Demand<i class="material-icons down"></i></button>
-      <div class="panel">
+      <div class="panel_session">
         <p>After providing the conceptual framework for discussion, we will discuss the first step in a data reuse
           project: understanding the problem an organization intends to solve and for whom; and how that translates into
           questions data can answer Participants will learn approaches for quickly researching complex problems,
@@ -184,7 +189,7 @@
 
       <button class="accordion"><span id="bold">Session 4</span>&nbsp Mapping Supply<i
           class="material-icons down"></i></button>
-      <div class="panel">
+      <div class="panel_session">
         <p>Data reuse requires both relevant data resources and technical capacity. This session will teach participants
           how to assess both. In the first part of the session, we will explain how participants can find useful data in
           their organization and data outside it. Participants will learn how to conduct data audits, map the location
@@ -196,7 +201,7 @@
       <button class="accordion"><span id="bold">Session 5</span>&nbsp Operational Models of Collaboration<i
           class="material-icons down"></i></button>
 
-      <div class="panel">
+      <div class="panel_session">
         <p>Data reuse efforts can take several forms depending on the operational and organizational needs of supply and
           demand stakeholders. In this session, we will provide an overview of the forms these relationships can take,
           focusing on two axes: Engagement and Accessibility. We will also provide guidance on the organizational
@@ -205,7 +210,7 @@
 
       <button class="accordion"><span id="bold">Session 6</span>&nbsp Identifying Risks<i
           class="material-icons down"></i></button>
-      <div class="panel">
+      <div class="panel_session">
         <p>The use and reuse of data is not without risks to data practitioners, the intended beneficiaries of their
           projects, and others. In this session, we will review the various dangers that data practitioners need to be
           aware of, including those related to privacy, data security, poor decision-making, and open washing.
@@ -215,19 +220,19 @@
 
       <button class="accordion"><span id="bold">Session 7</span>&nbsp Mitigating Risks and Other Legal Considerations<i
           class="material-icons down"></i></button>
-      <div class="panel">
+      <div class="panel_session">
 
         <p>Data reuse projects, such as data collaboratives, need policies and procedures that allow all participants to
           understand their roles and interact with the data in an ethical, legal, and responsible manner. In this
           session, we will seek to demystify the legal and governance elements of data collaboration to address the
           risks identified in the previous section. Using the Contractual Wheel of Data Collaboration as a model, we
-          will invite participants to explore the why, what, who, how, when, and where of their legal agreements and
+          will invite participants to explore the <i>Why, What, Who, How, When,</i> and <i>Where</i> of their legal agreements and
           demonstrate the different forms these elements can take.</p>
       </div>
 
       <button class="accordion"><span id="bold">Session 8</span>&nbsp Institutionalizing Data Reuse<i
           class="material-icons down"></i></button>
-      <div class="panel">
+      <div class="panel_session">
 
         <p>Data reuse projects can address public problems but their potential is best realized when they can be
           maintained in the long term. As such, organizations need to make changes in how they operate, ensuring they
@@ -244,31 +249,33 @@
     <div class="text-box" id="learning" style="margin-top:2rem;">
       <h2><span id="underline">Learning by Doing</span></h2>
 
-      <p>When learning how to innovate in a large institution, it helps to talk with those who have done it before. Attendees
+      <p>When learning how to innovate in a large institution, it helps to talk with those who have done it before.
+        Attendees
         enjoy confidential small group, off-the-record discussions as well as informal conversations with experienced
         data stewards and other professionals in
         data reuse organizations such as divisions within:</p>
-        <div class="container white coaching">
-      <ul>
-        <li>International Organizations (e.g. UNICEF, OECD, and World Bank)</li>
-        <li>National Statistical Offices (e.g. Danmarks Statistik) </li>
-        <li>Sub-National Policymaking Bodies (e.g. the City of New York)</li>
-        <li>Technology Start-ups (e.g. Cuebiq)</li>
-        <li>Large Technology Companies Working with the Public Sector (e.g. LinkedIn, Maxar Technologies); and</li>
-        <li>Leading Nonprofits and Philanthropies Supporting Governance Innovation (e.g. Cloudera Foundation). </li>
-      </ul>
-</div>
+      <div class="container white coaching">
+        <ul>
+          <li>International Organizations;</li>
+          <li>National Statistical Offices;</li>
+          <li>Sub-National Policymaking Bodies;</li>
+          <li>Technology Start-ups;</li>
+          <li>Companies with Data that could benefit the public interest;</li>
+          <li>Leading Nonprofits and Philanthropies Supporting Governance Innovation; and</li>
+          <li>Research Organizations that seek to engage non-traditional data sources.</li>
+        </ul>
+      </div>
     </div>
   </div>
 
   <div id="coaching" class="text-box">
     <h2><span id="underline">Online Project Coaching</span></h2>
-   
+
     <p>In addition to remote training, we offer an online coaching program that includes:</p>
     <div class="section-box coaching">
-       
+
       <div class="container white coaching">
-       
+
         <ul>
           <li>A flexible, customized program responsive to the participants’ specific needs and challenges;</li>
           <li>Rigorous diagnosis of impediments to project implementation;</li>
@@ -276,15 +283,15 @@
           <li>Mentoring and coaching from experts with a track record of leading successful social change; and,</li>
           <li>High-quality original and curated content, tools, and resources.</li>
         </ul>
-      </div> 
+      </div>
       <div class="container white coaching exp">
 
         <ul>
           <li>Six all-group online meetings with GovLab faculty and expert guests;</li>
           <li>Written feedback on the materials they create;</li>
-          <li>Connection to subject-matter experts and practitioners in the field; and,</li>
-          <li>Private office hours for individuals or teams.</li>
-          <li>A demo day to present the results of the projects.</li>
+          <li>Connection to subject-matter experts and practitioners in the field;</li>
+          <li>Private office hours for individuals or teams;</li>
+          <li>“A demo day to present the results of the projects; and</li>
           <li>A dedicated coach and coordinator for every ten participant individuals/teams.</li>
         </ul>
       </div>
@@ -293,11 +300,11 @@
 
 
 
-   
-      <p>Each team aims to finish with a tested data collaborative, a proof of concept and a plan for its implementation
-        and
-        scale.</p>
- 
+
+    <p>Each team aims to finish with a tested data collaborative, a proof of concept and a plan for its implementation
+      and
+      scale.</p>
+
 
   </div>
 
@@ -308,38 +315,39 @@
     <p>This course will be taught in an interactive, online group setting. Participants will meet every week for eight
       weeks of live instruction. While each classes will be carefully crafted to meet the needs of participants, each
       class will include:</p>
-      <div class="container white coaching">
-    <ul>
-      <li>Half-day seminars delivered by top faculty and practitioners;
-      </li>
-      <li>Discussions with data stewards who have successfully developed data collaboratives or open data strategies for
-        their organization;
-      </li>
-      <li>Custom resources including videos, case studies, articles, and other reading materials; and
+    <div class="container white coaching">
+      <ul>
+        <li>Half-day seminars delivered by top faculty and practitioners;
+        </li>
+        <li>Discussions with data stewards who have successfully developed data collaboratives or open data strategies
+          for
+          their organization;
+        </li>
+        <li>Custom resources including videos, case studies, articles, and other reading materials; and
 
-      </li>
-      <li>Hands-on exercises and opportunities to work with peers.
-      </li>
+        </li>
+        <li>Hands-on exercises and opportunities to work with peers.
+        </li>
 
-    </ul>
+      </ul>
     </div>
   </div>
 
   <div class="text-box" id="objectives" style="margin-top:2rem;">
     <h2><span id="underline">Course Objectives</span></h2>
 
-    <p>By the end of the eight-week course period, participants will possess</p>
+    <p>By the end of the eight-week course period, participants will possess:</p>
     <div class="container white coaching">
-    <ul>
-      <li>A greater understanding of the three waves of open data; </li>
-      <li>The ability to promote data responsibility and data stewardship within their organization; and
-      </li>
-      <li>An operational Data Collaboration and Reuse Strategy that serves the unique needs of the participant’s
-        organization.
-      </li>
-    </ul>
+      <ul>
+        <li>A greater understanding of the three waves of open data; </li>
+        <li>The ability to promote data responsibility and data stewardship within their organization; and
+        </li>
+        <li>An operational Data Collaboration and Reuse Strategy that serves the unique needs of the participant’s
+          organization.
+        </li>
+      </ul>
     </div>
-    <p>At the end of the course, participants will additionally join a network of course alumni through which they can
+    <p>At the end of the course, participants will join a network of course alumni through which they can
       continue to share regular insights and engage in peer-to-peer learning.</p>
   </div>
 
@@ -353,130 +361,78 @@
           better incorporating data reuse into their operations. While an application to participate is free,
           participation will be limited to a small cohort who work on data collaboration issues or serve individuals
           tasked by their organization to act as data stewards. Ideal applicants will have several years of experience
-          in a leadership role and demonstrate the capacity to work acros sectors.
+          in a leadership role and demonstrate the capacity to work across sectors.
           <br><br>
-          We admit candidates to specific sessions on a rolling, space-available basis, and encourage you to apply as
-          early as possible. Admission is a selective process based on your professional achievement and organizational
-          responsibilities.
+          Candidates are invited to apply until <b>Friday, December 17, 2020</b>. We will notify accepted applicants on Tuesday, December 22, 2020. Admission is a selective process based on your professional achievement and organizational responsibilities
           <br><br>
-          Applicants are asked to submit a resume and supporting material using the form <a href="https://docs.google.com/forms/d/e/1FAIpQLScWD0EUWrN3i-ou9wcPeyDQSokVuLpwJqmKvtTuenjN7M3TZg/viewform?usp=sf_link" target="_blank">here</a> and to answer a
+          Applicants are asked to submit a resume and supporting material using the form <a
+            href="https://docs.google.com/forms/d/e/1FAIpQLScWD0EUWrN3i-ou9wcPeyDQSokVuLpwJqmKvtTuenjN7M3TZg/viewform?usp=sf_link"
+            target="_blank">here</a> and to answer a
           handful of short questions about your interests and experience.
           <br><br>
-          Those interested in learning more can email us at datastewards@thegovlab.org. Please include “Data Re-Use
-          Strategy Course” in the subject line.</p>
+          Those interested in learning more can email us at datastewards@thegovlab.org. Please include “Data Reuse Strategy Course” in the subject line.</p>
       </div>
 
     </div>
   </div>
   <div id="home-page">
-  <div id="leads" class="faculty">
-    <h2><span id="underline">Program Leads</span><br><br>
-      <p class="sub">All sessions are taught by Open Data Policy Lab staff with both academic and real world experience.
-      </p>
-    </h2>
+    <div id="team_section" class="faculty">
+      <h2><span id="underline">Team</span><br><br>
+        <p class="sub">All sessions are taught by Open Data Policy Lab staff with both academic and real world
+          experience.
+        </p>
+      </h2>
 
-    <div class="team">
-     
-      <div v-for="(instructor,index) in facultyData" class="team-image">
-        <div class="square">
-          <img v-bind:src="instructor.headshot.data.thumbnails[3].url">
+      <div class="team">
+
+        <div v-for="(instructor,index) in facultyData" v-if="instructor.program_lead == true"  class="team-image">
+          <div class="square">
+            <img v-bind:src="instructor.headshot.data.thumbnails[3].url">
+          </div>
+          <h4>{{instructor.name}}</h4>
+          <h5>{{instructor.title}}</h5>
+          <a href="faculty.html#stefaan"><span id="bio">BIO</span></a>
         </div>
-        <h4>{{instructor.name}}</h4>
-        <h5>{{instructor.title}}</h5>
-        <a href="faculty.html#stefaan"><span id="bio">BIO</span></a>
+
+
+      </div>
+      <h2><span id="underline">Guest Faculty</span></h2>
+      <div id="guest" class="team">
+
+        <div v-for="(instructor,index) in facultyData" v-if="instructor.program_lead == false"  class="team-image">
+          <div class="square">
+            <img v-bind:src="instructor.headshot.data.thumbnails[3].url">
+          </div>
+          <h4>{{instructor.name}}</h4>
+          <h5>{{instructor.title}}</h5>
+          <a href="faculty.html#stefaan"><span id="bio">BIO</span></a>
+        </div>
+
+
       </div>
 
-
     </div>
+    <div id="faq" class="text-box">
+      <h2><span id="underline">Frequently Asked Questions</span></h2>
+      <div class="faqs">
+        <div v-for="(question,index) in faqData">
+          <div @click="toggleMessage(index)" v-bind:class="{ active: showMessage && index_active==index }"
+            class="accordion"><span id="bold">{{question.question}}</span><i class="material-icons down"></i></div>
+          <div v-if="showMessage && index_active==index" class="panel" v-html="question.answer">
 
+          </div>
+        </div>
+      </div>
+    </div>
   </div>
-</div>
-  <!-- <div id="faculty" class="faculty">
-    <h2><span id="underline">Other Faculty</span></h2>
 
-    <div class="other-team team">
-      <div class="team-image">
-        <div class="square">
-          <img src="img/team/beth_simone_noveck.jpg">
-        </div>
-        <h4>Beth Simone Noveck</h4>
-        <h5>The GovLab</h5>
-        <a href="faculty.html#beth"><span id="bio">BIO</span></a>
-      </div>
-      <div class="team-image">
-        <div class="square">
-          <img src="img/team/Jean-NoeLandry_082420.jpeg">
-        </div>
-        <h4>Jean-Noé Landry</h4>
-        <h5>Open North</h5>
-        <a href="faculty.html#jean"><span id="bio">BIO</span></a>
-      </div>
-      <div class="team-image">
-        <div class="square">
-          <img src="img/team/AmenRaMashariki_082420.jpg">
-        </div>
-        <h4>Amen Ra Mashariki</h4>
-        <h5>World Resources Institute</h5>
-        <a href="faculty.html#amenra"><span id="bio">BIO</span></a>
-      </div>
-    </div>
-    <div class="other-team team">
-      <div class="team-image">
-        <div class="square">
-          <img src="img/team/KaraSelke_082420.jpg">
-        </div>
-        <h4>Kara Selke</h4>
-        <h5>StreetLight Data, Inc.</h5>
-        <a href="faculty.html#kara"><span id="bio">BIO</span></a>
-      </div>
-      <div class="team-image">
-        <div class="square">
-          <img src="img/team/PaulKo_082420.jpg">
-        </div>
-        <h4>Paul Ko</h4>
-        <h5>LinkedIn</h5>
-        <a href="faculty.html#paul"><span id="bio">BIO</span></a>
-      </div>
-      <div class="team-image">
-        <div class="square">
-          <img src="img/team/JuliaStoyanovich_082420.jpg">
-        </div>
-        <h4>Julia Stoyanovich</h4>
-        <h5>New York University</h5>
-        <a href="faculty.html#julia"><span id="bio">BIO</span></a>
-      </div>
-    </div>
-    <div class="other-team team">
-      <div class="team-image">
-        <div class="square">
-          <img src="img/team/ScottDavid_082420.png">
-        </div>
-        <h4>Scott David</h4>
-        <h5>University of Washington</h5>
-        <a href="faculty.html#scott"><span id="bio">BIO</span></a>
-      </div>
-      <div class="team-image">
-        <div class="square">
-          <img src="img/team/RudiBorrmann_082420.jpg">
-        </div>
-        <h4>Rudi Borrmann</h4>
-        <h5>Open Government Partnership</h5>
-        <a href="faculty.html#rudi"><span id="bio">BIO</span></a>
-      </div>
-      <div class="team-image mobile-hide">
-        <div class="square">
 
-        </div>
-
-      </div>
-    </div>
-
-  </div> -->
   <div id="odpl" class="text-box">
     <h2><span id="underline">About The Open Data Policy Lab</span></h2>
     <div style="padding-top:0" class="text">
-      <p style="padding:0">An initiative of The GovLab with support from Microsoft, the <a href="https://opendatapolicylab.org" target="_blank">Open Data Policy Lab </a>seeks to
-        accelerate the responsible re-use and opening of data for the benefit of society and the equitable spread of
+      <p style="padding:0">An initiative of The GovLab with support from Microsoft, the <a
+          href="https://opendatapolicylab.org" target="_blank">Open Data Policy Lab </a>seeks to
+        accelerate the responsible reuse and opening of data for the benefit of society and the equitable spread of
         economic opportunity. As part of this mission, the Open Data Policy Lab supports decision-makers at local,
         state, and national levels, crafting a series of tools to help navigate and respond to the challenges posed by
         the Third Wave of Open Data. The GovLab, based at the Tandon School of Engineering at New York University, aims
@@ -490,10 +446,11 @@
       Attribution-ShareAlike 4.0 International License</a>.</p>
 
 </footer>
-
-<script src="js/accordion.js"></script>
 <script src="js/navbar.js"></script>
 <script src="js/highlight.js"></script>
+<script src="js/accordion.js"></script>
+<script src="js/accordion-faculty.js"></script>
+
 
 <script>/* Toggle between adding and removing the "responsive" class to topnav when the user clicks on the icon */
   function nav() {
@@ -506,6 +463,14 @@
   }
 
 </script>
+<script>
+  $(document).ready(function(){
+    var alert_msg = document.getElementById("alert-msg");
+    $(".close").click(function(){
+      alert_msg.style.display = "none";
+    });
+  });
+  </script>
 <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js">
 </script>
 <script src='https://unpkg.com/vue@2.0.3/dist/vue.js'></script>
