@@ -3,7 +3,6 @@
     .alert-content{
         margin: 2rem;
         height: 15vh;
-        background-color: var(--theme-blue);
         border-radius: 25px;
         display: flex;
         flex-direction: row;
@@ -12,6 +11,10 @@
       }
       .text-alert{
         margin-left: 20px;
+      }
+      .faqs{
+        padding: 0 1rem;
+        margin: 0;
       }
     .mobile-hide{
 display:none;
@@ -286,6 +289,15 @@ display:none;
         width: 100%;
      }  
 }
+@media screen and (min-width: 950px) and (max-width: 1100px){
+    .team-image{
+        -webkit-flex: 0 0 33.33%;
+        -ms-flex: 0 0 33.33%;
+        flex: 0 0 33.33%;
+        max-width: 33.33%;
+        color: white;
+        height: 400px;
+      }}
 @media screen and (min-width: 579px) and (max-width: 949px){
     .team-image{
         -webkit-flex: 0 0 33.33%;
