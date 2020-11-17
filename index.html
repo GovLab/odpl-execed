@@ -32,11 +32,15 @@
 </header>
 <div id="alert-msg" class="alert">
   <div class="alert-content">
-  <p class="text-alert">APPLICATIONS OPEN<br><span id="sub-text">Apply <i><a href="https://docs.google.com/forms/d/e/1FAIpQLScWD0EUWrN3i-ou9wcPeyDQSokVuLpwJqmKvtTuenjN7M3TZg/viewform?usp=sf_link" id="text-link" target="_blank">here</a></i>. by December 17, 2020 to be considered for the next cohort of learners. </span></p>
+    <p class="text-alert">APPLICATIONS OPEN<br><span id="sub-text">Apply <i><a
+            href="https://docs.google.com/forms/d/e/1FAIpQLScWD0EUWrN3i-ou9wcPeyDQSokVuLpwJqmKvtTuenjN7M3TZg/viewform?usp=sf_link"
+            id="text-link" target="_blank">here</a></i> by December 17, 2020 to be considered for the next cohort of
+        learners. </span></p>
 
-  <a href="#" class="close" data-dismiss="alert" aria-label="close">&times;</a>
+    <a href="#" class="close" data-dismiss="alert" aria-label="close">&times;</a>
+  </div>
 </div>
-</div>
+
 <body>
   <div class="topnav-m">
     <a href="javascript:void(0);" class="icon" onclick="nav()">
@@ -103,7 +107,9 @@
 
           <li><span id="bold">Why It Matters:</span> Focus on the three waves of open data and how data reuse has proven
             to be transformative;</li>
-          <li><span id="bold">The Current State of Play:</span> Current practice around data reuse. It will then shift to the failures of current approaches and the need to shift from ad hoc engagements to more systematic, sustainable, and responsible models;</li>
+          <li><span id="bold">The Current State of Play:</span> Current practice around data reuse. It will then shift
+            to the failures of current approaches and the need to shift from ad hoc engagements to more systematic,
+            sustainable, and responsible models;</li>
           <li><span id="bold">Defining Demand:</span> Methodologies in how organizations can formulate questions that
             data can answer;</li>
           <li><span id="bold">Mapping Supply:</span> Methods for organizations to discover and assess the open and
@@ -226,7 +232,8 @@
           understand their roles and interact with the data in an ethical, legal, and responsible manner. In this
           session, we will seek to demystify the legal and governance elements of data collaboration to address the
           risks identified in the previous section. Using the Contractual Wheel of Data Collaboration as a model, we
-          will invite participants to explore the <i>Why, What, Who, How, When,</i> and <i>Where</i> of their legal agreements and
+          will invite participants to explore the <i>Why, What, Who, How, When,</i> and <i>Where</i> of their legal
+          agreements and
           demonstrate the different forms these elements can take.</p>
       </div>
 
@@ -363,14 +370,17 @@
           tasked by their organization to act as data stewards. Ideal applicants will have several years of experience
           in a leadership role and demonstrate the capacity to work across sectors.
           <br><br>
-          Candidates are invited to apply until <b>Friday, December 17, 2020</b>. We will notify accepted applicants on Tuesday, December 22, 2020. Admission is a selective process based on your professional achievement and organizational responsibilities
+          Candidates are invited to apply until <b>Friday, December 17, 2020</b>. We will notify accepted applicants on
+          Tuesday, December 22, 2020. Admission is a selective process based on your professional achievement and
+          organizational responsibilities
           <br><br>
           Applicants are asked to submit a resume and supporting material using the form <a
             href="https://docs.google.com/forms/d/e/1FAIpQLScWD0EUWrN3i-ou9wcPeyDQSokVuLpwJqmKvtTuenjN7M3TZg/viewform?usp=sf_link"
             target="_blank">here</a> and to answer a
           handful of short questions about your interests and experience.
           <br><br>
-          Those interested in learning more can email us at datastewards@thegovlab.org. Please include “Data Reuse Strategy Course” in the subject line.</p>
+          Those interested in learning more can email us at datastewards@thegovlab.org. Please include “Data Reuse
+          Strategy Course” in the subject line.</p>
       </div>
 
     </div>
@@ -385,7 +395,7 @@
 
       <div class="team">
 
-        <div v-for="(instructor,index) in facultyData" v-if="instructor.program_lead == true"  class="team-image">
+        <div v-for="(instructor,index) in facultyData" v-if="instructor.program_lead == true" class="team-image">
           <div class="square">
             <img v-bind:src="instructor.headshot.data.thumbnails[3].url">
           </div>
@@ -399,7 +409,7 @@
       <h2><span id="underline">Guest Faculty</span></h2>
       <div id="guest" class="team">
 
-        <div v-for="(instructor,index) in facultyData" v-if="instructor.program_lead == false"  class="team-image">
+        <div v-for="(instructor,index) in facultyData" v-if="instructor.program_lead == false" class="team-image">
           <div class="square">
             <img v-bind:src="instructor.headshot.data.thumbnails[3].url">
           </div>
@@ -464,13 +474,13 @@
 
 </script>
 <script>
-  $(document).ready(function(){
+  $(document).ready(function () {
     var alert_msg = document.getElementById("alert-msg");
-    $(".close").click(function(){
+    $(".close").click(function () {
       alert_msg.style.display = "none";
     });
   });
-  </script>
+</script>
 <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js">
 </script>
 <script src='https://unpkg.com/vue@2.0.3/dist/vue.js'></script>
