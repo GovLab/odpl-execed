@@ -56,8 +56,7 @@
       <li><a href="#outline">Program Outline</a></li>
       <li><a href="#objectives">Course Objectives</a></li>
       <li><a href="#application">Application</a></li>
-      <li><a href="#team_section">Team</a></li>
-      <li><a href="#guest">Guest Faculty</a></li>
+      <li><a href="#team_section">Faculty</a></li>
       <li><a href="#faq">FAQs</a></li>
       <li><a href="#odpl">Open Data Policy Lab</a></li>
     </ul>
@@ -387,7 +386,7 @@
   </div>
   <div id="home-page">
     <div id="team_section" class="faculty">
-      <h2><span id="underline">Team</span><br><br>
+      <h2><span id="underline">Program Leads</span><br><br>
         <p class="sub">All sessions are taught by Open Data Policy Lab staff with both academic and real world
           experience.
         </p>
@@ -395,7 +394,7 @@
 
       <div class="team">
 
-        <div v-for="(instructor,index) in facultyData.reverse()" v-if="instructor.program_lead == true" class="team-image">
+        <div v-for="(instructor,index) in facultyData.reverse()" v-if="instructor.program_lead == true" class="team-image team-50">
           <div class="square">
             <img v-bind:src="instructor.headshot.data.thumbnails[3].url">
           </div>
