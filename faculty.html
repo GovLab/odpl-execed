@@ -42,7 +42,28 @@
 
     <div id="home-page">
       <div class="grid bios">
-        <div v-for="(instructor,index) in facultyData" class="faculty-item">
+        <div v-for="(instructor,index) in facultyData.reverse()" v-if="instructor.program_lead == true" class="faculty-item">
+          <div class="faculty-image">
+            <div class="square">
+              <img v-bind:src="instructor.headshot.data.thumbnails[3].url">
+            </div>
+          </div>
+          <div class="faculty-text">
+            <h3>{{instructor.name}}</h3>
+            <h5>{{instructor.title}}</h5>
+
+            <p v-bind:class="{ hide: showMessage && index_active==index }" v-if="instructor.short_bio">{{instructor.short_bio}} </p>
+            <div v-if="!instructor.short_bio" v-html="instructor.full_bio"></div>
+
+            <div v-if="instructor.short_bio && showMessage && index_active==index" class="panel" v-html="instructor.full_bio">
+
+            </div>
+            <div v-if="instructor.short_bio" @click="toggleMessage(index)" v-bind:class="{ active: showMessage && index_active==index }" class="accordion faculty-more"><i class="material-icons down"></i></div>
+          </div>
+
+        </div>
+
+        <div v-for="(instructor,index) in facultyData.reverse()" v-if="instructor.program_lead == false" class="faculty-item">
           <div class="faculty-image">
             <div class="square">
               <img v-bind:src="instructor.headshot.data.thumbnails[3].url">
