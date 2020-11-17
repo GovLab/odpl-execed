@@ -301,6 +301,9 @@ margin-bottom:2rem;
     border-radius: 50%;
     border: 0px solid var(--theme-blue);
   }
+  .hide{
+      display:none;
+  }
   .team a{
 color: var(--theme-blue);
 font-size: 16px;

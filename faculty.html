@@ -52,7 +52,7 @@
             <h3>{{instructor.name}}</h3>
             <h5>{{instructor.title}}</h5>
 
-            <p v-if="instructor.short_bio">{{instructor.short_bio}} </p>
+            <p v-bind:class="{ hide: showMessage && index_active==index }" v-if="instructor.short_bio">{{instructor.short_bio}} </p>
             <div v-if="!instructor.short_bio" v-html="instructor.full_bio"></div>
 
             <div v-if="instructor.short_bio && showMessage && index_active==index" class="panel" v-html="instructor.full_bio">
