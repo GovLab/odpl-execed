@@ -262,11 +262,11 @@ margin-bottom:2rem;
     color: white;
     height: 400px;
   }
-  .team-image.team-50{
-    -webkit-flex: 0 0 50% !important;
-    -ms-flex: 0 0 50%  !important;
-    flex: 0 0 50%  !important;
-    max-width: 50%  !important;
+  .team-image.team-100{
+    -webkit-flex: 0 0 100% !important;
+    -ms-flex: 0 0 100%  !important;
+    flex: 0 0 100%  !important;
+    max-width: 100%  !important;
     color: white;
     height: 350px;
   }

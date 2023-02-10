@@ -62,9 +62,9 @@
       <li><a href="#organization">Course Details</a></li>
       <li><a href="#application">Application</a></li>
       <li><a href="#team_section">Faculty</a></li>
-      <li><a href="#">Alumni</a></li>
-      <li><a href="#">Partnerships</a></li>
-      <li><a href="#">Press</a></li>
+      <li><a href="#alumni">Alumni</a></li>
+      <li><a href="#partnerships">Partnerships</a></li>
+      <li><a href="#press">Press</a></li>
       <li><a
           href="https://opendatapolicylab.org/articles/data-stewards-academy-participant-testimonials/index.html">Testimonials</a>
       </li>
@@ -323,7 +323,7 @@
         <div class="team">
 
           <div v-for="(instructor,index) in facultyData.reverse()" v-if="instructor.program_lead == true"
-            class="team-image team-50">
+            class="team-image team-100">
             <div class="square">
               <img v-bind:src="instructor.headshot.data.thumbnails[3].url">
             </div>
@@ -448,7 +448,7 @@
           </span></i>
       </p>
     </div>
-    <div id="application" class="text-box">
+    <div id="partnerships" class="text-box">
       <h2><span id="underline">Partnerships</span></h2>
 
       <div class="text-box">
