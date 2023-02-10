@@ -119,6 +119,9 @@ margin-bottom:2rem;
     justify-content: center;
     align-items: center;
 }
+.hero img{
+    height: 200px;
+}
 .faculty.hero{
     height: 35vh;
 }
@@ -207,6 +210,9 @@ margin-bottom:2rem;
 }
 .text{
     padding: 2rem 12rem 0rem 12rem;
+    display:flex;
+    flex-direction: column;
+    align-items: center;
 }
 .text p{
     font-size: 1.4rem;
@@ -241,8 +247,8 @@ margin-bottom:2rem;
   -webkit-flex-flow: row wrap;
   -ms-flex-flow: row wrap;
   flex-flow: row wrap;
-    margin: 1rem 8rem;
-    padding: 1rem 0;
+    margin: 1rem 8rem 0rem 8rem;
+    padding: 1rem 0rem 0rem 0rem;
 
   }
   .other-team{
@@ -262,7 +268,7 @@ margin-bottom:2rem;
     flex: 0 0 50%  !important;
     max-width: 50%  !important;
     color: white;
-    height: 400px;
+    height: 350px;
   }
   .faculty-image{
     display:flex;
@@ -321,6 +327,23 @@ text-decoration: none;
     padding: 0.5rem 1rem;
     border: 1px solid var(--theme-blue);
 
+  }
+  .button{
+    padding: 0.5rem 1rem;
+    border: 1px solid var(--theme-blue);
+    background-color: var(--theme-blue);
+  }
+  a.button {
+    text-transform: uppercase;
+    text-decoration: none;
+    color: #ffffff;
+  }
+  .button:hover{
+    background-color: #ffffff;
+    transition: all .6s ease;
+  }
+  a.button:hover {
+    color: var(--theme-blue);
   }
   .team a:hover{
     color: #523080;
@@ -490,6 +513,15 @@ background-color:white;
     counter-reset: li;
   
 }
+.text-box ul.application-section-list{
+    padding: 0rem 2rem 0rem 2rem;
+    margin: 0rem 1rem 0 1rem;
+    line-height:  2;
+    list-style: none;
+    counter-reset: li;
+  
+}
+
 .text-box ol li {
     counter-increment: li;
 }
@@ -663,6 +695,15 @@ font-weight: 400;
 color: var(--theme-blue);
 text-align:center;
 }
+.text-box .sub{
+    font-size: 1.2rem;
+    padding:0;
+    font-weight: 400;
+    color: var(--theme-blue);
+    text-align:center;
+    }
+    
+
 .faculty-bio{
     display:flex;
     flex-direction: row;
