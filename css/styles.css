@@ -111,7 +111,7 @@ margin-bottom:2rem;
 }
 .hero{
     padding: 2rem;
-    height: 55vh;
+    height: 65vh;
     background-color: var(--theme-blue);
     color: var(--white);
     display: flex;
@@ -120,7 +120,7 @@ margin-bottom:2rem;
     align-items: center;
 }
 .hero img{
-    height: 200px;
+    height: 350px;
 }
 .faculty.hero{
     height: 35vh;
@@ -199,12 +199,20 @@ margin-bottom:2rem;
     justify-content: center;
     align-items: center;
 }
-.intro-text img{
+.intro-text .intro-quote{
+    background-color: #ffffff;
     width: 50%;
-    height:50%;
-    display:block;
+    display:flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 3rem 2rem;
+}
+.intro-text .intro-quote p{
+    font-size: 1rem;
 }
 .intro-text-box{
+
     width: 50%;
     margin: 2rem 6rem 2rem 6rem;
 }
@@ -215,7 +223,7 @@ margin-bottom:2rem;
     align-items: center;
 }
 .text p{
-    font-size: 1.4rem;
+    font-size: 1.2rem;
     font-weight: 300;
     line-height: 1.5;
 }
@@ -267,6 +275,14 @@ margin-bottom:2rem;
     -ms-flex: 0 0 100%  !important;
     flex: 0 0 100%  !important;
     max-width: 100%  !important;
+    color: white;
+    height: 350px;
+  }
+  .team-image.team-33{
+    -webkit-flex: 0 0 33% !important;
+    -ms-flex: 0 0 33%  !important;
+    flex: 0 0 33%  !important;
+    max-width: 33%  !important;
     color: white;
     height: 350px;
   }
@@ -351,6 +367,14 @@ text-decoration: none;
   .team a:hover #bio{
     border: 1px solid #523080;
   }
+  .call-out-quote{
+    background-color: var(--theme-blue);
+    display:flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 1rem 0;
+  }
   .call-out-box{
       padding: 1rem 15rem;
   }
@@ -360,6 +384,9 @@ text-decoration: none;
       line-height: 1.5;
       color: #ffffff;
       font-size: 1.2rem;
+  }
+  .call-out-box a{
+    color: #ffffff;
   }
 .section-box{
     display:flex;
