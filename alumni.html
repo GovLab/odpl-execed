@@ -28,7 +28,33 @@
 </header>
 
 <body>
+  <div class="topnav-m">
+    <a href="javascript:void(0);" class="icon" onclick="nav()">
+      <i class="fa fa-bars"></i>
+    </a>
 
+  </div>
+
+  <nav id="navbar">
+    <ul id="mainNav">
+
+      <li><a href="index.html#goals">Learning Goals</a></li>
+      <li><a href="index.html#outline">Program Outline</a></li>
+      <li><a href="index.html#organization">Course Details</a></li>
+      <li><a href="index.html#application">Application</a></li>
+      <li><a href="index.html#team_section">Faculty</a></li>
+      <li><a href="alumni.html">Alumni</a></li>
+      <li><a href="index.html#partnerships">Course Partners</a></li>
+      <!-- <li><a href="#press">Press</a></li> -->
+      <li><a
+          href="https://opendatapolicylab.org/articles/data-stewards-academy-participant-testimonials/index.html">Testimonials</a>
+      </li>
+      <li><a href="#faq">FAQs</a></li>
+
+      <li><a href="https://opendatapolicylab.org/academy/data-reuse-strategy/syllabus-2021/">Self-Directed Learning
+          Program</a></li>
+    </ul>
+  </nav>
   <div id="intro" class="faculty hero">
     <!-- <h4>Today’s Problems: Tomorrow’s Toolkit</h4> -->
     <!-- <img id="odpl-logo" src="img/open-data-policy-lab-logo-horizontal-white.svg"> -->
@@ -45,7 +71,36 @@
 
 
   <div class="faculty-page">
+    <div class="intro-text">
 
+      <div class="intro-quote">
+
+        <!-- <div class="team-image team-100">
+          <div class="square">
+            <img src="img/christine.png">
+          </div>
+        </div> -->
+        <p>“The course allowed me to improve my knowledge about open data and especially how to connect data needs with resources, as well as to develop a data stewardship strategy to apply in the projects that I manage…It was also an opportunity to expand my network of professional contacts with the possibility of exploring future collaborations”<br><br>
+          <i><span class="quote">-- Eduardo Béjar Feijoó, Executive Director, Fundación de Ayuda por Internet (FUNDAPI)
+
+            </span></i>
+        </p>
+
+      </div>
+      <div class="intro-quote">
+
+        <!-- <div class="team-image team-100">
+          <div class="square">
+            <img src="img/christine.png">
+          </div>
+        </div> -->
+        <p>“This course is a wonderful resource for any organization considering creating, expanding or refining data use strategies and processes…The course combines methodology and application for an immediate ‘return on investment’ at all stages of data use strategy and implementation”<br><br>
+          <i><span class="quote">-- Karen Hampton, All Payer Claims Program Manager, Oregon Health Authority
+            </span></i>
+        </p>
+
+      </div>
+    </div>
     <div id="home-page">
       <div id="team_section" class="faculty">
         <div id="guest" class="team">
@@ -55,9 +110,8 @@
             <div class="square">
               <img v-bind:src="instructor.headshot.data.thumbnails[3].url">
             </div>
-            <h4>{{instructor.first_name}}</h4>
-            <h5>{{instructor.title}}</h5>
-            <a href="faculty.html#stefaan"><span id="bio">BIO</span></a>
+            <h4>{{instructor.first_name}}&nbsp{{instructor.last_name}}</h4>
+            <h5>{{instructor.title}},&nbsp{{instructor.affiliation}}</h5>
           </div>
   
   
@@ -65,6 +119,7 @@
   
       </div>
     </div>
+    
   </div>
 </body>
 <footer>

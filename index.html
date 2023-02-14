@@ -64,7 +64,7 @@
       <li><a href="#team_section">Faculty</a></li>
       <li><a href="alumni.html">Alumni</a></li>
       <li><a href="#partnerships">Course Partners</a></li>
-      <li><a href="#press">Press</a></li>
+      <!-- <li><a href="#press">Press</a></li> -->
       <li><a
           href="https://opendatapolicylab.org/articles/data-stewards-academy-participant-testimonials/index.html">Testimonials</a>
       </li>
@@ -86,9 +86,9 @@
 
       <div class="intro-quote">
 
-        <div class="team-image team-100" v-for="(instructor,index) in facultyData" v-if="instructor.id == 58">
+        <div class="team-image team-100">
           <div class="square">
-            <img v-bind:src="instructor.headshot.data.thumbnails[3].url">
+            <img src="img/christine.png">
           </div>
         </div>
         <p>“This course was an incredible opportunity to learn from experienced peers, receive mentorship from academic
@@ -365,9 +365,9 @@
       </div>
       <div class="call-out-box">
         <div class="call-out-quote">
-        <div class="team-image team-100" v-for="(instructor,index) in facultyData" v-if="instructor.id == 66">
+        <div class="team-image team-100">
           <div class="square">
-            <img v-bind:src="instructor.headshot.data.thumbnails[3].url">
+            <img src="img/jorge.jpeg">
           </div>
         </div>
         <p>“With the Data Stewards Executive Program, I was able to bootstrap our data-sharing project into a more
@@ -386,12 +386,12 @@
       <div class="section-box process">
         <a href="http://www.thegovlab.org" target="_blank"><img id="govlab-chalk" src="img/process2.jpg"></a>
         <div class="container white process">
-          <p><a href="https://form.typeform.com/to/QeK5l6r1" target="_blank">Applications are currently open</a> for a Data Stewards Academy Executive Education course focused on data
+          <p class="process-text"><a href="https://form.typeform.com/to/QeK5l6r1" target="_blank">Applications are currently open</a> for a Data Stewards Academy Executive Education course focused on data
             re-use in cities! Applications are due by April 5 at 11:59pm EST. Submit your application <a
               href="https://form.typeform.com/to/QeK5l6r1" target="_blank">here</a>! Selected
             applicants will be notified by April 17, 2023. The course will run from April 24 to 29 with two one week breaks. 
-          </p>
-          <p><b>Criteria for Participation:</b> </p>
+         <br>
+         <br><b>Criteria for Participation:</b>  </p>
           <ul class="application-section-list">
 
             <li>Applicants must apply and participate in the course in a professional capacity;</li>
@@ -406,38 +406,39 @@
               peers.</li>
 
           </ul>
-
-          <p><b>Application Process:</b> <br>
-            The Data Stewards Academy currently offers a few Data Stewards Academy Course offerings per year. The best
-            way to stay informed about course application opportunities is to sign-up for our Data Stewards Network
-            <a href="https://thegovlab.us6.list-manage.com/subscribe?u=1a990feb5c&id=bc6d09925f" target="_blank">newsletter.</a><br><br>
-          <a href="https://form.typeform.com/to/QeK5l6r1" target="_blank">The application form</a> asks for the following information: 
-          <ul class="application-section-list">
-            <li>Resume</li>
-            <li>Letter of Support from a representative in your organization </li>
-            <li>Name</li>
-            <li>Email address</li>
-            <li>Organization Affiliation</li>
-            <li>Title </li>
-            <li>Country & Timezone</li>
-            <li>How does your current position and mandate relate to this course? 300 word limit</li>
-            <li>Tell us what you can about the data re-use strategy you are looking to develop over the course of the
-              executive program; we recognize this may only be an idea at this time but welcome any thoughts and details
-              you can provide. 300 word limit </li>
-            <li>How does your current work relate to work either in the city in which you reside or another city
-              (cities)? 300 word limit</li>
-          </ul>
-          </p>
-          <p>
-            <b>Course Cost:</b><br>
-
-            This is a free course thanks to the Open Data Policy Lab’s support by Microsoft. While the program is free,
-            we do limit the course participation to a maximum of twenty participants to maintain a high-quality
-            experience for everyone involved and to foster intimate peer to peer learning via discussion.
-          </p>
-        </div>
-
+       
       </div>
+    </div>
+    <div class="container white coaching">
+      <p><b>Application Process:</b> <br>
+        The Data Stewards Academy currently offers a few Data Stewards Academy Course offerings per year. The best
+        way to stay informed about course application opportunities is to sign-up for our Data Stewards Network
+        <a href="https://thegovlab.us6.list-manage.com/subscribe?u=1a990feb5c&id=bc6d09925f" target="_blank">newsletter.</a><br><br>
+      <a href="https://form.typeform.com/to/QeK5l6r1" target="_blank">The application form</a> asks for the following information: 
+      <ul class="application-section-list">
+        <li>Resume</li>
+        <li>Letter of Support from a representative in your organization </li>
+        <li>Name</li>
+        <li>Email address</li>
+        <li>Organization Affiliation</li>
+        <li>Title </li>
+        <li>Country & Timezone</li>
+        <li>How does your current position and mandate relate to this course? 300 word limit</li>
+        <li>Tell us what you can about the data re-use strategy you are looking to develop over the course of the
+          executive program; we recognize this may only be an idea at this time but welcome any thoughts and details
+          you can provide. 300 word limit </li>
+        <li>How does your current work relate to work either in the city in which you reside or another city
+          (cities)? 300 word limit</li>
+      </ul>
+      </p>
+      <p>
+        <b>Course Cost:</b><br>
+
+        This is a free course thanks to the Open Data Policy Lab’s support by Microsoft. While the program is free,
+        we do limit the course participation to a maximum of twenty participants to maintain a high-quality
+        experience for everyone involved and to foster intimate peer to peer learning via discussion.
+      </p>
+    </div>
     </div>
     <div class="call-out-box">
       <div class="call-out-quote">
@@ -482,9 +483,9 @@
     </div>
     <div class="call-out-box">
       <div class="call-out-quote">
-        <div class="team-image team-100" v-for="(instructor,index) in facultyData" v-if="instructor.id == 58">
+        <div class="team-image team-100">
           <div class="square">
-            <img v-bind:src="instructor.headshot.data.thumbnails[3].url">
+            <img src="img/eva.jpg">
           </div>
         </div>
       <p>“As the saying goes, ‘In a world befogged by superficiality, moments of clarity are few and far between.’ The
@@ -509,11 +510,11 @@
           <br>
           Current and prior partners for Data Stewards Academy courses include:
         </p>
-        <ul>
-          <li>UNICEF</li>
-          <li>UNHCR</li>
-          <li>WRI </li>
-          <li>TidePool Digital </li>
+        <ul class="partner-logo">
+          <li><img src="img/united-nations-childrens-fund-unicef-vector-logo.png"></li>
+          <li><img src="img/IA-Graphic01-Color-LRG.png"></li>
+          <li><img src="img/The-Data-Tank_White-On-Black.jpg"> </li>
+          <!-- <li>TidePool Digital </li> -->
         </ul>
       </div>
     </div>
