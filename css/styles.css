@@ -111,7 +111,7 @@ margin-bottom:2rem;
 }
 .hero{
     padding: 2rem;
-    height: 55vh;
+    height: 65vh;
     background-color: var(--theme-blue);
     color: var(--white);
     display: flex;
@@ -119,8 +119,11 @@ margin-bottom:2rem;
     justify-content: center;
     align-items: center;
 }
+.hero img{
+    height: 350px;
+}
 .faculty.hero{
-    height: 35vh;
+    height: 40vh;
 }
 .faculty.hero.others{
     height: 15vh;
@@ -130,7 +133,7 @@ margin-bottom:2rem;
     font-weight: 200;
 }
 .faculty-page{
-    padding: 2rem 15rem;
+    padding: 2rem 4rem;
 }
 .faculty-item{
     display:flex;
@@ -196,20 +199,31 @@ margin-bottom:2rem;
     justify-content: center;
     align-items: center;
 }
-.intro-text img{
+.intro-text .intro-quote{
+    background-color: #ffffff;
     width: 50%;
-    height:50%;
-    display:block;
+    display:flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 3rem 2rem;
+}
+.intro-text .intro-quote p{
+    font-size: 1rem;
 }
 .intro-text-box{
+
     width: 50%;
     margin: 2rem 6rem 2rem 6rem;
 }
 .text{
     padding: 2rem 12rem 0rem 12rem;
+    display:flex;
+    flex-direction: column;
+    align-items: center;
 }
 .text p{
-    font-size: 1.4rem;
+    font-size: 1.2rem;
     font-weight: 300;
     line-height: 1.5;
 }
@@ -241,8 +255,8 @@ margin-bottom:2rem;
   -webkit-flex-flow: row wrap;
   -ms-flex-flow: row wrap;
   flex-flow: row wrap;
-    margin: 1rem 8rem;
-    padding: 1rem 0;
+    margin: 1rem 8rem 0rem 8rem;
+    padding: 1rem 0rem 0rem 0rem;
 
   }
   .other-team{
@@ -256,13 +270,21 @@ margin-bottom:2rem;
     color: white;
     height: 400px;
   }
-  .team-image.team-50{
-    -webkit-flex: 0 0 50% !important;
-    -ms-flex: 0 0 50%  !important;
-    flex: 0 0 50%  !important;
-    max-width: 50%  !important;
+  .team-image.team-100{
+    -webkit-flex: 0 0 100% !important;
+    -ms-flex: 0 0 100%  !important;
+    flex: 0 0 100%  !important;
+    max-width: 100%  !important;
     color: white;
-    height: 400px;
+    height: 350px;
+  }
+  .team-image.team-33{
+    -webkit-flex: 0 0 33% !important;
+    -ms-flex: 0 0 33%  !important;
+    flex: 0 0 33%  !important;
+    max-width: 33%  !important;
+    color: white;
+    height: 350px;
   }
   .faculty-image{
     display:flex;
@@ -273,8 +295,9 @@ margin-bottom:2rem;
     align-content: center;
   }
   .team-image img{
-  width: auto;
+  width: 100%;
     height: 110%;
+    object-fit:cover;
   }
   .faculty-image img{
     width: auto;
@@ -322,11 +345,36 @@ text-decoration: none;
     border: 1px solid var(--theme-blue);
 
   }
+  .button{
+    padding: 0.5rem 1rem;
+    border: 1px solid var(--theme-blue);
+    background-color: var(--theme-blue);
+  }
+  a.button {
+    text-transform: uppercase;
+    text-decoration: none;
+    color: #ffffff;
+  }
+  .button:hover{
+    background-color: #ffffff;
+    transition: all .6s ease;
+  }
+  a.button:hover {
+    color: var(--theme-blue);
+  }
   .team a:hover{
     color: #523080;
   }
   .team a:hover #bio{
     border: 1px solid #523080;
+  }
+  .call-out-quote{
+    background-color: var(--theme-blue);
+    display:flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 1rem 0;
   }
   .call-out-box{
       padding: 1rem 15rem;
@@ -338,6 +386,9 @@ text-decoration: none;
       color: #ffffff;
       font-size: 1.2rem;
   }
+  .call-out-box a{
+    color: #ffffff;
+  }
 .section-box{
     display:flex;
     flex-direction: row;
@@ -345,8 +396,9 @@ text-decoration: none;
 }
 .section-box img#govlab-chalk {
     width: 100%; 
-    height: 500px;
+    height: 600px;
     display:block;
+    object-fit: fit;
 }
 .section-box img{
     width: 30%;
@@ -446,6 +498,10 @@ height:400px;
     margin: 0rem 0rem 0 0rem;
 
 }
+.text-box .container p.process-text{
+    padding: 0rem 0rem 2rem 3rem;
+    margin: 0rem 0rem 0 0rem;
+}
 #goals.text-box .container.white li{
 
     font-size: 1.1rem;
@@ -490,6 +546,15 @@ background-color:white;
     counter-reset: li;
   
 }
+.text-box ul.application-section-list{
+    padding: 0rem 2rem 0rem 2rem;
+    margin: 0rem 1rem 0 1rem;
+    line-height:  2;
+    list-style: none;
+    counter-reset: li;
+  
+}
+
 .text-box ol li {
     counter-increment: li;
 }
@@ -511,6 +576,20 @@ background-color:white;
     display: inline-block; 
     width: 1em;
     margin-left: -1em;
+}
+.text-box ul.partner-logo{
+    list-style: none !important;
+    display: flex;
+    flex-direction: row;
+    gap: 2em;
+    justify-content: center;
+    align-items: center;
+}
+ul.partner-logo img{
+height: 60px;
+}
+.text-box ul.partner-logo li:before{
+content: none;
 }
 #bold{
     font-weight: 600;
@@ -663,6 +742,15 @@ font-weight: 400;
 color: var(--theme-blue);
 text-align:center;
 }
+.text-box .sub{
+    font-size: 1.2rem;
+    padding:0;
+    font-weight: 400;
+    color: var(--theme-blue);
+    text-align:center;
+    }
+    
+
 .faculty-bio{
     display:flex;
     flex-direction: row;

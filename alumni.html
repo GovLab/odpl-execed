@@ -1,0 +1,139 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+  <meta http-equiv="X-UA-Compatible" content="IE=EmulateIE11">
+  <meta charset="UTF-8">
+  <meta name="description" content="" />
+  <meta property="og:type" content="website" />
+  <meta property="og:title" content="GovLab Executive Education Program" />
+  <meta property="og:description" content="" />
+  <meta property="og:image" content="img/hero.jpeg" />
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Open Data Policy Lab Executive Education Program</title>
+  <link href="css/styles.css" rel="stylesheet">
+  <link href="css/navbar.css" rel="stylesheet">
+  <link href="css/mobile.css" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+  <link rel="stylesheet" href="https://use.typekit.net/kwv5eho.css">
+  <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+  <script src="https://unpkg.com/@directus/sdk-js@5.3.4/dist/directus-sdk.umd.min.js"></script>
+</head>
+<header class="header-logo">
+  <a href="http://thegovlab.org" target="_blank">
+    <img src="img/govlab-logo-white.png" alt="The GovLab">
+  </a>
+
+</header>
+
+<body>
+  <div class="topnav-m">
+    <a href="javascript:void(0);" class="icon" onclick="nav()">
+      <i class="fa fa-bars"></i>
+    </a>
+
+  </div>
+
+  <nav id="navbar">
+    <ul id="mainNav">
+
+      <li><a href="index.html#goals">Learning Goals</a></li>
+      <li><a href="index.html#outline">Program Outline</a></li>
+      <li><a href="index.html#organization">Course Details</a></li>
+      <li><a href="index.html#application">Application</a></li>
+      <li><a href="index.html#team_section">Faculty</a></li>
+      <li><a href="alumni.html">Alumni</a></li>
+      <li><a href="index.html#partnerships">Course Partners</a></li>
+      <!-- <li><a href="#press">Press</a></li> -->
+      <li><a
+          href="https://opendatapolicylab.org/articles/data-stewards-academy-participant-testimonials/index.html">Testimonials</a>
+      </li>
+      <li><a href="#faq">FAQs</a></li>
+
+      <li><a href="https://opendatapolicylab.org/academy/data-reuse-strategy/syllabus-2021/">Self-Directed Learning
+          Program</a></li>
+    </ul>
+  </nav>
+  <div id="intro" class="faculty hero">
+    <!-- <h4>Today’s Problems: Tomorrow’s Toolkit</h4> -->
+    <!-- <img id="odpl-logo" src="img/open-data-policy-lab-logo-horizontal-white.svg"> -->
+    <!-- <h4>The Open Data Policy Lab Executive Education Program in</h4> -->
+    <h1>Data Stewards Society</h1>
+    <p>Since its launch in 2020, we have been fortunate to work with leaders from more than 50 countries. Despite their
+      diverse titles and industries, data stewards everywhere share a common goal - to maximize the positive impact of
+      data re-use.
+      <br><br>
+      The Data Stewards Society represents a growing network of accomplished alumni who have graduated from various Data
+      Stewards Academy courses throughout the years.
+    </p>
+  </div>
+
+
+  <div class="faculty-page">
+    <div class="intro-text">
+
+      <div class="intro-quote">
+
+        <!-- <div class="team-image team-100">
+          <div class="square">
+            <img src="img/christine.png">
+          </div>
+        </div> -->
+        <p>“The course allowed me to improve my knowledge about open data and especially how to connect data needs with resources, as well as to develop a data stewardship strategy to apply in the projects that I manage…It was also an opportunity to expand my network of professional contacts with the possibility of exploring future collaborations”<br><br>
+          <i><span class="quote">-- Eduardo Béjar Feijoó, Executive Director, Fundación de Ayuda por Internet (FUNDAPI)
+
+            </span></i>
+        </p>
+
+      </div>
+      <div class="intro-quote">
+
+        <!-- <div class="team-image team-100">
+          <div class="square">
+            <img src="img/christine.png">
+          </div>
+        </div> -->
+        <p>“This course is a wonderful resource for any organization considering creating, expanding or refining data use strategies and processes…The course combines methodology and application for an immediate ‘return on investment’ at all stages of data use strategy and implementation”<br><br>
+          <i><span class="quote">-- Karen Hampton, All Payer Claims Program Manager, Oregon Health Authority
+            </span></i>
+        </p>
+
+      </div>
+    </div>
+    <div id="home-page">
+      <div id="team_section" class="faculty">
+        <div id="guest" class="team">
+  
+          <div v-for="(instructor,index) in AlumniData.reverse()"
+            v-if="(instructor.headshot!=null)" class="team-image">
+            <div class="square">
+              <img v-bind:src="instructor.headshot.data.thumbnails[3].url">
+            </div>
+            <h4>{{instructor.first_name}}&nbsp{{instructor.last_name}}</h4>
+            <h5>{{instructor.title}},&nbsp{{instructor.affiliation}}</h5>
+          </div>
+  
+  
+        </div>
+  
+      </div>
+    </div>
+    
+  </div>
+</body>
+<footer>
+  <img src="img/cc-logo.png">
+  <p>This work is licensed under a <a href="http://creativecommons.org/licenses/by-sa/4.0/">Creative Commons
+      Attribution-ShareAlike 4.0 International License</a>.</p>
+
+</footer>
+
+
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js">
+</script>
+<script src='https://unpkg.com/vue@2.0.3/dist/vue.js'></script>
+<script src="https://unpkg.com/vue-meta/dist/vue-meta.min.js"></script>
+<script src="js/odpl-course.js"></script>
+
+</html>

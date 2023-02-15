@@ -30,6 +30,7 @@ new Vue({
   
     return {
       facultyData: [],
+      AlumniData: [],
       faqData:[],
       showMessage: true,
       index_active:0,
@@ -40,12 +41,42 @@ new Vue({
   created: function created() {
 
     this.fetchFaculty();
+    this.fetchAlumni();
     this.toggleMessage();
     this.fetchQuestions();
   },
 
 
   methods: {
+    fetchAlumni() {
+      self = this;
+      const client = new DirectusSDK({
+        url: "https://directus.thegovlab.com/",
+        project: "odpl_course",
+        storage: window.localStorage
+      });
+
+      client.getItems(
+  'alumni',
+  {
+    fields: ['*.*']
+  }
+).then(data => {
+
+  data.data.sort(function(a, b) {
+    
+    var textA = a.last_name.toUpperCase();
+    var textB = b.last_name.toUpperCase();
+    return (textA < textB) ? -1 : (textA > textB) ? 1 : 0;
+
+  
+});
+  console.log(data)
+  self.AlumniData = data.data;
+})
+
+.catch(error => console.error(error));
+    },
     fetchFaculty() {
       self = this;
       const client = new DirectusSDK({
@@ -102,4 +133,19 @@ new Vue({
 }
 });
 
+
+var acc = document.getElementsByClassName("accordion");
+var i;
+
+for (i = 0; i < acc.length; i++) {
+  acc[i].addEventListener("click", function() {
+    this.classList.toggle("active");
+    var panel = this.nextElementSibling;
+    if (panel.style.maxHeight){
+      panel.style.maxHeight = null;
+    } else {
+      panel.style.maxHeight = panel.scrollHeight + "px";
+    } 
+  });
+}
 
