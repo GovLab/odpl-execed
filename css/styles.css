@@ -295,8 +295,9 @@ margin-bottom:2rem;
     align-content: center;
   }
   .team-image img{
-  width: auto;
+  width: 100%;
     height: 110%;
+    object-fit:cover;
   }
   .faculty-image img{
     width: auto;
