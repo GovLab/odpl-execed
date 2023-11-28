@@ -163,21 +163,20 @@
 
         <div class="container white process">
           <ul>
-            <li>Empower you to solve public problems through systemic, sustainable, and responsible data reuse
+            <li>Empower you to solve public problems through systemic, sustainable, and responsible data re-use
             </li>
-            <li>Provide you with a powerful toolkit to draft a data reuse strategy that seeks to address public needs
+            <li>Provide you with a powerful toolkit to draft a data re-use strategy that seeks to address public needs
             </li>
-            <li>Introduce the latest tools and technologies for use in designing, implementing and managing policies and
-              services
+            <li>Introduce the latest tools and technologies for use in designing, implementing and managing policies and services
             </li>
-            <li>Enable you to pursue more purposeful, demand-driven partnerships and collaborations with a broad and
-              inter-sectoral group of actors</li>
-            <li>Guide you on the best ways to mitigate risks and promote responsible data practices</li>
+            <li>Enable you to pursue more purposeful, demand-driven partnerships and collaborations with a broad and inter-sectoral group of actors</li>
+            <li>Guide you on the best ways to mitigate risks and promote responsible data practices
+            </li>
             <li>Ensure you can translate data into insights and insights into meaningful action</li>
 
           </ul>
         </div>
-        <a href="http://www.thegovlab.org" target="_blank"><img id="govlab-chalk" src="img/learning.jpg"></a>
+        <a href="http://www.thegovlab.org" target="_blank"><img id="program-cohort" src="img/learning-cohort.png"></a>
       </div>
     </div>
 
@@ -186,14 +185,9 @@
 
     <div id="outline" class="text-box">
       <h2><span id="underline">Program Outline</span></h2>
-      <p>To ensure the successful progression into the <a href="https://opendatapolicylab.org/third-wave-of-open-data/"
-          target="_blank">third wave of open data</a> where data is made available for reuse in
-        a collaborative and responsible manner, it is necessary to broaden our range of skills and expertise in the
-        realm of data. We need new and innovative ways to make data accessible to solve real-world problems and drive
-        progress. This requires a shift from simply making data available to finding ways to connect data supply with
-        demand in a meaningful way.
+      <p>To ensure the successful progression into <a href="https://opendatapolicylab.org/third-wave-of-open-data/" target="_blank">the third wave of open data</a> where data is made available for re-use in a collaborative and responsible manner, it is necessary to broaden our range of skills and expertise in the realm of data. We need new and innovative ways to make data accessible to solve real-world problems and drive progress. This requires a shift from simply making data available to finding ways to connect data supply with demand in a meaningful way.
         <br><br>
-        The Data Stewards Academy Executive Education course will help <a href="http://datastewards.net/"
+        The Data Stewards Academy Executive Education course will help <a href="https://thegovlab.org/static/files/publications/wanted-data-stewards.pdf"
           target="_blank">data stewards</a>—responsible data leaders in the
         public, private sector, nonprofit or academic sector—develop an end-to-end data re-use strategy to solve public
         problems. Noting the ways data resources can inform their day-to-day and strategic decision-making, we engage
@@ -293,7 +287,7 @@
           </p>
         </div>
 
-        <button class="accordion"><span id="bold">Session 8</span>&nbsp Institutionalizing Data Reuse<i
+        <button class="accordion"><span id="bold">Session 8</span>&nbsp Institutionalizing Data Re-Use”<i
             class="material-icons down"></i></button>
         <div class="panel_session">
 
@@ -318,10 +312,26 @@
 
     <div class="text-box" id="organization" style="margin-top:2rem;">
       <h2><span id="underline">Course Details</span></h2>
+      <div id="team_section" class="faculty">
+
+        <div class="team">
+
+          <div v-for="(instructor,index) in facultyData.reverse()" v-if="instructor.program_lead == true"
+            class="team-image team-33">
+            <div class="square">
+              <img v-bind:src="instructor.headshot.data.thumbnails[3].url">
+            </div>
+            <h4>{{instructor.name}}</h4>
+            <h5>{{instructor.title}}</h5>
+            <a href="faculty.html#stefaan"><span id="bio">BIO</span></a>
+          </div>
+        </div>
+      </div>
       <p>The Executive Education course will be taught in an interactive, online group setting. All session are taught
         by Open Data Policy Lab staff and Guest Faculty with both academic and real world experience. The GovLab team is
         committed to making adjustments to meet the needs of course participants within reason. Details about the course
         can be found below and in the <a href="#faq">FAQs.</a></p>
+        
       <div class="container white coaching">
         <ul>
           <li><b>Time Commitment:</b> This course consists of two and a half hour classes on Tuesdays and Thursdays
@@ -348,21 +358,7 @@
 
         </ul>
       </div>
-      <div id="team_section" class="faculty">
 
-        <div class="team">
-
-          <div v-for="(instructor,index) in facultyData.reverse()" v-if="instructor.program_lead == true"
-            class="team-image team-33">
-            <div class="square">
-              <img v-bind:src="instructor.headshot.data.thumbnails[3].url">
-            </div>
-            <h4>{{instructor.name}}</h4>
-            <h5>{{instructor.title}}</h5>
-            <a href="faculty.html#stefaan"><span id="bio">BIO</span></a>
-          </div>
-        </div>
-      </div>
       <div class="call-out-box">
         <div class="call-out-quote">
         <div class="team-image team-100">
@@ -386,11 +382,7 @@
       <div class="section-box process">
         <a href="http://www.thegovlab.org" target="_blank"><img id="govlab-chalk" src="img/process2.jpg"></a>
         <div class="container white process">
-          <p class="process-text"><a href="https://form.typeform.com/to/QeK5l6r1" target="_blank">Applications are currently open</a> for a Data Stewards Academy Executive Education course focused on data
-            re-use in cities! Applications are due by April 5 at 11:59pm EST. Submit your application <a
-              href="https://form.typeform.com/to/QeK5l6r1" target="_blank">here</a>! Selected
-            applicants will be notified by April 17, 2023. The course will run from April 24 to June 29 with two one week breaks. 
-         <br>
+          <p class="process-text">
          <br><b>Criteria for Participation:</b>  </p>
           <ul class="application-section-list">
 
@@ -414,7 +406,7 @@
         The Data Stewards Academy currently offers a few Data Stewards Academy Course offerings per year. The best
         way to stay informed about course application opportunities is to sign-up for our Data Stewards Network
         <a href="https://thegovlab.us6.list-manage.com/subscribe?u=1a990feb5c&id=bc6d09925f" target="_blank">newsletter.</a><br><br>
-      <a href="https://form.typeform.com/to/QeK5l6r1" target="_blank">The application form</a> asks for the following information: 
+      As part of our application process, we ask for the following information:: 
       <ul class="application-section-list">
         <li>Resume</li>
         <li>Letter of Support from a representative in your organization </li>
@@ -427,8 +419,6 @@
         <li>Tell us what you can about the data re-use strategy you are looking to develop over the course of the
           executive program; we recognize this may only be an idea at this time but welcome any thoughts and details
           you can provide. 300 word limit </li>
-        <li>How does your current work relate to work either in the city in which you reside or another city
-          (cities)? 300 word limit</li>
       </ul>
       </p>
       <p>
