@@ -105,14 +105,14 @@
       <div id="team_section" class="faculty">
         <div id="guest" class="team">
   
-          <div v-for="(instructor,index) in AlumniData.reverse()"
-            v-if="(instructor.headshot!=null)" class="team-image">
+          <a v-for="(instructor,index) in AlumniData.reverse()"
+            v-if="(instructor.headshot!=null)" class="team-image" :href="'https://www.' + instructor.bio_link" target="_blank">
             <div class="square">
               <img v-bind:src="instructor.headshot.data.thumbnails[3].url">
             </div>
             <h4>{{instructor.first_name}}&nbsp{{instructor.last_name}}</h4>
             <h5>{{instructor.title}},&nbsp{{instructor.affiliation}}</h5>
-          </div>
+          </a>
   
   
         </div>
@@ -135,5 +135,5 @@
 <script src='https://unpkg.com/vue@2.0.3/dist/vue.js'></script>
 <script src="https://unpkg.com/vue-meta/dist/vue-meta.min.js"></script>
 <script src="js/odpl-course.js"></script>
-
+<script src="js/navbar.js"></script>
 </html>

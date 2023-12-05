@@ -262,6 +262,9 @@ margin-bottom:2rem;
   .other-team{
     margin: 1rem 12rem;
   }
+  a.team-image{
+    text-decoration: none;
+  }
   .team-image{
     -webkit-flex: 0 0 25%;
     -ms-flex: 0 0 25%;
