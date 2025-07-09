@@ -18,7 +18,6 @@
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
   <link rel="stylesheet" href="https://use.typekit.net/kwv5eho.css">
   <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
-  <script src="https://unpkg.com/@directus/sdk-js@5.3.4/dist/directus-sdk.umd.min.js"></script>
 </head>
 <header class="header-logo">
   <a href="http://thegovlab.org" target="_blank">
@@ -31,7 +30,7 @@
 
   <div id="intro" class="faculty hero">
     <!-- <h4>Today’s Problems: Tomorrow’s Toolkit</h4> -->
-    <img id="odpl-logo" src="img/open-data-policy-lab-logo-horizontal-white.svg">
+    <img id="odpl-logo" src="img/open-data-policy-lab-logo-horizontal-white.svg" style="width: 100%;">
     <!-- <h4>The Open Data Policy Lab Executive Education Program in</h4> -->
     <h1>Program Leads</h1>
 
@@ -45,7 +44,7 @@
         <div v-for="(instructor,index) in facultyData.reverse()" v-if="instructor.program_lead == true" class="faculty-item">
           <div class="faculty-image">
             <div class="square">
-              <img v-bind:src="instructor.headshot.data.thumbnails[3].url">
+              <img v-bind:src="instructor.headshot.local_url || instructor.headshot.data.thumbnails[3].url">
             </div>
           </div>
           <div class="faculty-text">
@@ -66,7 +65,7 @@
         <div v-for="(instructor,index) in facultyData.reverse()" v-if="instructor.program_lead == false" class="faculty-item">
           <div class="faculty-image">
             <div class="square">
-              <img v-bind:src="instructor.headshot.data.thumbnails[3].url">
+              <img v-bind:src="instructor.headshot.local_url || instructor.headshot.data.thumbnails[3].url">
             </div>
           </div>
           <div class="faculty-text">

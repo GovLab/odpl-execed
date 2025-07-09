@@ -24,7 +24,6 @@
   <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
   <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/2.1.3/jquery.min.js"></script>
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
-  <script src="https://unpkg.com/@directus/sdk-js@5.3.4/dist/directus-sdk.umd.min.js"></script>
 </head>
 <header class="header-logo">
   <a href="http://thegovlab.org" target="_blank">
@@ -319,7 +318,7 @@
           <div v-for="(instructor,index) in facultyData.reverse()" v-if="instructor.program_lead == true"
             class="team-image team-33">
             <div class="square">
-              <img v-bind:src="instructor.headshot.data.thumbnails[3].url">
+              <img v-bind:src="instructor.headshot.local_url || instructor.headshot.data.thumbnails[3].url">
             </div>
             <h4>{{instructor.name}}</h4>
             <h5>{{instructor.title}}</h5>
@@ -460,7 +459,7 @@
         <div v-for="(instructor,index) in facultyData.reverse()"
           v-if="(instructor.program_lead == false) && (instructor.headshot!=null)" class="team-image">
           <div class="square">
-            <img v-bind:src="instructor.headshot.data.thumbnails[3].url">
+            <img v-bind:src="instructor.headshot.local_url || instructor.headshot.data.thumbnails[3].url">
           </div>
           <h4>{{instructor.name}}</h4>
           <h5>{{instructor.title}}</h5>

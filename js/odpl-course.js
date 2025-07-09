@@ -34,7 +34,7 @@ new Vue({
       faqData:[],
       showMessage: true,
       index_active:0,
-      apiURL: 'https://directus.thegovlab.com/odpl_course',
+      // apiURL: 'https://directus.thegovlab.com/odpl_course',
     }
   },
 
@@ -50,80 +50,46 @@ new Vue({
   methods: {
     fetchAlumni() {
       self = this;
-      const client = new DirectusSDK({
-        url: "https://directus.thegovlab.com/",
-        project: "odpl_course",
-        storage: window.localStorage
-      });
-
-      client.getItems(
-  'alumni',
-  {
-    fields: ['*.*']
-  }
-).then(data => {
-
-  data.data.sort(function(a, b) {
-    
-    var textA = a.last_name.toUpperCase();
-    var textB = b.last_name.toUpperCase();
-    return (textA < textB) ? -1 : (textA > textB) ? 1 : 0;
-
-  
-});
-  console.log(data)
-  self.AlumniData = data.data;
-})
-
-.catch(error => console.error(error));
+      // Instead of API, load local JSON
+      fetch('data/alumni.json')
+        .then(response => response.json())
+        .then(data => {
+          data.data.sort(function(a, b) {
+            var textA = a.last_name.toUpperCase();
+            var textB = b.last_name.toUpperCase();
+            return (textA < textB) ? -1 : (textA > textB) ? 1 : 0;
+          });
+          console.log(data)
+          self.AlumniData = data.data;
+        })
+        .catch(error => console.error(error));
     },
     fetchFaculty() {
       self = this;
-      const client = new DirectusSDK({
-        url: "https://directus.thegovlab.com/",
-        project: "odpl_course",
-        storage: window.localStorage
-      });
-
-      client.getItems(
-  'faculty',
-  {
-    fields: ['*.*']
-  }
-).then(data => {
-
-  data.data.sort(function(a, b) {
-    
-    var textA = a.name.toUpperCase();
-    var textB = b.name.toUpperCase();
-    return (textA < textB) ? -1 : (textA > textB) ? 1 : 0;
-
-  
-});
-  console.log(data)
-  self.facultyData = data.data;
-})
-
-.catch(error => console.error(error));
+      // Instead of API, load local JSON
+      fetch('data/faculty.json')
+        .then(response => response.json())
+        .then(data => {
+          data.data.sort(function(a, b) {
+            var textA = a.name.toUpperCase();
+            var textB = b.name.toUpperCase();
+            return (textA < textB) ? -1 : (textA > textB) ? 1 : 0;
+          });
+          console.log(data)
+          self.facultyData = data.data;
+        })
+        .catch(error => console.error(error));
     },
     fetchQuestions() {
       self = this;
-      const client = new DirectusSDK({
-        url: "https://directus.thegovlab.com/",
-        project: "odpl_course",
-        storage: window.localStorage
-      });
-
-      client.getItems(
-  'faq',
-  {
-    fields: ['*.*']
-  }
-).then(data => {
-  console.log(data)
-  self.faqData = data.data;
-})
-.catch(error => console.error(error));
+      // Instead of API, load local JSON
+      fetch('data/faq.json')
+        .then(response => response.json())
+        .then(data => {
+          console.log(data)
+          self.faqData = data.data;
+        })
+        .catch(error => console.error(error));
     },
     toggleMessage (index) {
       this.index_active = index;

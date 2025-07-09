@@ -18,7 +18,6 @@
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
   <link rel="stylesheet" href="https://use.typekit.net/kwv5eho.css">
   <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
-  <script src="https://unpkg.com/@directus/sdk-js@5.3.4/dist/directus-sdk.umd.min.js"></script>
 </head>
 <header class="header-logo">
   <a href="http://thegovlab.org" target="_blank">
@@ -108,7 +107,7 @@
           <a v-for="(instructor,index) in AlumniData.reverse()"
             v-if="(instructor.headshot!=null)" class="team-image" :href="'https://www.' + instructor.bio_link" target="_blank">
             <div class="square">
-              <img v-bind:src="instructor.headshot.data.thumbnails[3].url">
+              <img v-bind:src="instructor.headshot.local_url || instructor.headshot.data.thumbnails[3].url">
             </div>
             <h4>{{instructor.first_name}}&nbsp{{instructor.last_name}}</h4>
             <h5>{{instructor.title}},&nbsp{{instructor.affiliation}}</h5>
